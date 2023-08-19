@@ -13,7 +13,7 @@ const BaoCaoXuatKhoa = () => {
               </tr>
               <tr className="">
                 <td className=""></td>
-                <td className="font-bold">Nhập tại Kho chẵn VTYT - Hoá chất</td>
+                <td className="font-bold">Nhập tại: Kho lẻ Nội trú</td>
                 
 
               </tr>
@@ -28,7 +28,7 @@ const BaoCaoXuatKhoa = () => {
                 </td>
               </tr>
               <tr>
-                <td className=" text-center"> Ngày 4 Tháng 7 năm 2023</td>
+                <td className=" text-center">Ngày nhập, Ngày 4 Tháng 7 năm 2023</td>
               </tr>
             </tbody>
           </table>
@@ -36,15 +36,13 @@ const BaoCaoXuatKhoa = () => {
           <table className="table  w-100 mt-5px font-bold">
             <tbody>
               <tr>
-                <td className=" ">Số chứng từ</td>
+                <td className=" ">Số chứng từ: 10</td>
                
               </tr>
-              <tr>
-                <td className="  "> Nơi cung cấp: CÔNG TY THIÉT BỊ Y TẾ THANH PHƯỚC</td>
-              </tr>
+             
               <tr>
                 <td className="" colSpan={2}>
-                  Lý do nhập: nhập hoá chất
+                  Lý do nhập:
                 </td>
               </tr>
             </tbody>
@@ -54,7 +52,7 @@ const BaoCaoXuatKhoa = () => {
               <tr className=" ">
                 <td className="font-bold text-center text-middle">STT</td>
                 <td className="font-bold text-center text-middle">Mã </td>
-                <td className="font-bold text-center text-middle w-40 ">
+                <td className="font-bold text-center text-middle ">
                   Tên sản phẩm
                 </td>
                 <td className="font-bold text-center text-middle p-5px">
@@ -94,6 +92,7 @@ const BaoCaoXuatKhoa = () => {
                 <td className="text-right p-3px text-middle">66</td>
                 <td className="text-right p-3px text-middle ">400</td>
                 <td className="text-right p-3px text-middle">26.400</td>
+                <td className="text-right p-3px text-middle">10</td>
               </tr>
               
             </tbody>

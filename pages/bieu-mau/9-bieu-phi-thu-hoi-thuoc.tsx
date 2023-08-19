@@ -1,98 +1,93 @@
 const BaoCaoXuatKhoa = () => {
   return (
-    <div className="paper A4 landscape font-size-12">
+    <div className="paper A4 landscape font-size-13">
       <section className="sheet padding-5mm">
         <table className="w-100  ">
           <tbody>
             <tr className="">
               <td className="  w-50 p-20px">
-                <table className="table ">
+                <table className="table  w-100 ">
                   <tbody>
-                    <tr className="text-center">
+                    <tr className="font-bold">
                       <td>SỞ Y TẾ BẠC LIÊU</td>
+                      <td className="text-right">Lưu: khoa Dược - VTYT</td>
                     </tr>
-                    <tr className="text-center">
+                    <tr className="">
                       <td className="font-bold">
                         BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU
                       </td>
+                      <td className="text-right">số:XKL0000003/202308</td>
                     </tr>
-                    <tr className="text-center">
-                      <td className="font-bold text-decoration-underline">
-                        KHOA DƯỢC - VTYT
+                    <tr className="">
+                      <td className=" text-decoration-underline">
+                        Khoa trả: Tủ trực Dược khoa hồi sức cấp cứu
+                      </td>
+                      <td rowSpan={2} className="text-middle text-right">
+                        In lần thứ 2
+                      </td>
+                    </tr>
+                    <tr className="">
+                      <td className=" text-decoration-underline">
+                        Kho duyệt: kho lẻ Nội trú
                       </td>
                     </tr>
                   </tbody>
                 </table>
-                <table className="table  w-100">
+
+                <table className="table  w-100 mt-5">
                   <tbody>
                     <tr>
                       <td className="font-bold text-center">
-                        BÁO CÁO XUẤT KHOA
+                        PHIẾU THU HỒI THUỐC, VẬT TƯ Y TẾ
                       </td>
                     </tr>
                     <tr>
-                      <td className="font-bold text-center">
-                        Tháng 7 năm 2023
+                      <td className="font-italic text-center">
+                        (Phiếu thu hồi tủ trực - Ngày 31 tháng 01 năm 2023)
                       </td>
                     </tr>
                   </tbody>
                 </table>
-                <table className="table  w-100">
+
+                <table className="table  w-100 mt-5">
                   <tbody>
                     <tr>
-                      <td className="font-bold ">Kho Khoa Dược</td>
-                    </tr>
-                    <tr>
-                      <td className="font-bold align-shift-2 ">
-                        {" "}
-                        Xuất qua kho lẻ
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="table row"></td>
-                    </tr>
-                    <tr>
-                      <td className="font-bold  align-shift-5">
-                        Hình thức dự trù:BHYT
-                      </td>
+                      <td className=" ">Lý do xuất: trả về kho lẻ nội trú</td>
                     </tr>
                   </tbody>
                 </table>
+
                 <table className="table table-bordered w-100">
                   <tbody>
-                    <tr className="h-40px ">
-                      <td className="font-bold text-center text-middle">STT</td>
-                      <td className="font-bold text-center text-middle">
+                    <tr className="h-40px font-bold text-center ">
+                      <td className="text-middle" rowSpan={2}>
+                        STT
+                      </td>
+                      <td className="text-middle" rowSpan={2}>
                         Mã sản phẩm
                       </td>
-                      <td className="font-bold text-center text-middle ">
+                      <td className="text-middle " rowSpan={2}>
                         Tên sản phẩm
                       </td>
-                      <td className="font-bold text-center text-middle">
+                      <td className="text-middle" rowSpan={2}>
                         Đơn vị
                       </td>
-                      <td className="font-bold text-center text-middle">
-                        Hãng sx
+
+                      <td className="text-middle" colSpan={2}>
+                        số lượng
                       </td>
-                      <td className="font-bold text-center text-middle">
-                        Số lượng
-                      </td>
-                      <td className="font-bold text-center text-middle">
-                        Đơn giá
-                      </td>
-                      <td className="font-bold text-center text-middle">
-                        Thành tiền
+
+                      <td className="text-middle" rowSpan={2}>
+                        Ghi chú
                       </td>
                     </tr>
+                    <tr className="font-bold text-center">
+                      <td>yêu cầu</td>
+                      <td>Thực trả</td>
+                    </tr>
                     <tr>
-                      <td
-                        colSpan={7}
-                        className="bg-light font-bold remove-border-bold"
-                      >
-                        Hoá Chất
-                      </td>
-                      <td className="text-right bg-light remove-border-bold">
-                        60.000,00
+                      <td colSpan={7} className=" font-bold remove-border-bold">
+                        vật tư y tế
                       </td>
                     </tr>
                     <tr>
@@ -100,10 +95,7 @@ const BaoCaoXuatKhoa = () => {
                         colSpan={7}
                         className="align-shift-2 font-bold remove-border-bold"
                       >
-                        Hoá Chất
-                      </td>
-                      <td className="text-right remove-border-bold">
-                        60.000,00
+                        vật tư y tế
                       </td>
                     </tr>
                     <tr>
@@ -113,235 +105,206 @@ const BaoCaoXuatKhoa = () => {
                         Cồn 70 độ(cồn sát khuẩn 70)
                       </td>
                       <td className="text-center">lít</td>
-                      <td></td>
                       <td className="text-right p-3px">2</td>
-                      <td className="text-right p-3px">30.000,00</td>
-                      <td className="text-right p-3px">60.000,00</td>
-                    </tr>
-                    <tr>
-                      <td colSpan={8} className="font-bold text-right ">
-                        60.000,00
-                      </td>
+                      <td className="text-right p-3px">2</td>
+                      <td className="text-right p-3px"></td>
                     </tr>
                   </tbody>
+                  <tfoot>
+                    <tr>
+                      <td className="font-bold  " colSpan={2}>
+                        Tổng cộng: 1
+                      </td>
+                      <td
+                        className="font-bold text-right remove-border-bold"
+                        colSpan={2}
+                      >
+                        Ngày,giờ duyệt: 19h58, 31/07/2023
+                      </td>
+                      <td
+                        className="font-bold text-right remove-border-bold"
+                        colSpan={3}
+                      >
+                        Ngày in: 19h58, 31/07/2023
+                      </td>
+                    </tr>
+                  </tfoot>
                 </table>
-                <table className="table  w-100">
+
+               
+                <table className="table text-center font-bold  w-100 mt-10 ">
                   <tbody>
                     <tr>
-                      <td className="font-bold ">Tổng khoản:1</td>
-                      <td className="font-bold text-right remove-border-bold">
-                        Tổng tiền : 60.000,00
+                      <td className="  ">
+                        Trưởng khoa dược - VTYT <br />
+                        <span className="font-italic" style={{ fontWeight: "normal" }}>
+                          (Hoặc người được uỷ quyền)
+                        </span>
                       </td>
-                    </tr>
-                    <tr>
-                      <td className="table row"></td>
-                    </tr>
-
-                    <tr>
-                      <td className="font-bold text-right " colSpan={2}>
-                        {" "}
-                        Bạc Liêu, ngày .... tháng ... năm 2023
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                {/* // <table calssName="table table-bordered w-100">
-      //   <tbody>
-      //     <tr>
-      //       <td className="font-bold text-right "> Bạc Liêu, ngày .... tháng ... năm 2023</td>
-
-      //     </tr>
-      //   </tbody>
-      // </table> */}
-                <table className="table  w-100">
-                  <tbody>
-                    <tr>
-                      <td className="font-bold  ">
-                        TRƯỞNG KHOA DƯỢC - VTYT
-                      </td>
-                      <td className="font-bold w-auto text-center">THỦ KHO</td>
-                      <td className="font-bold w-auto text-center">
-                        THỐNG KÊ DƯỢC
-                      </td>
-                      <td className="font-bold w-auto text-center">
-                        NGƯỜI NHẬN
+                      <td className="">Người giao</td>
+                      <td className="">Người nhận</td>
+                      <td className="">
+                        Trưởng khoa lâm sàng/
+                        <br />
+                        Cận lâm sàng <br />
+                        <span className="font-italic" style={{ fontWeight: "normal" }}>
+                         ( Hoặc người được uỷ quyền)
+                        </span>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </td>
 
-              <td className="w-50 p-20px">
-                <div className="padding-25mm">
-                  <table className="table ">
-                    <tbody>
-                      <tr className="text-center">
-                        <td>SỞ Y TẾ BẠC LIÊU</td>
-                      </tr>
-                      <tr className="text-center">
-                        <td className="font-bold">
-                          BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU
-                        </td>
-                      </tr>
-                      <tr className="text-center">
-                        <td className="font-bold text-decoration-underline">
-                          KHOA DƯỢC - VTYT
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table className="table  w-100">
-                    <tbody>
-                      <tr>
-                        <td className="font-bold text-center">
-                          BÁO CÁO XUẤT KHOA
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="font-bold text-center">
-                          Tháng 7 năm 2023
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table className="table  w-100">
-                    <tbody>
-                      <tr>
-                        <td className="font-bold ">Kho Khoa Dược</td>
-                      </tr>
-                      <tr>
-                        <td className="font-bold align-shift-2 ">
-                          {" "}
-                          Xuất qua kho lẻ
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="table row"></td>
-                      </tr>
-                      <tr>
-                        <td className="font-bold  align-shift-5">
-                          Hình thức dự trù:BHYT
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table className="table table-bordered w-100">
-                    <tbody>
-                      <tr className="h-40px ">
-                        <td className="font-bold text-center text-middle">
-                          STT
-                        </td>
-                        <td className="font-bold text-center text-middle">
-                          Mã sản phẩm
-                        </td>
-                        <td className="font-bold text-center text-middle ">
-                          Tên sản phẩm
-                        </td>
-                        <td className="font-bold text-center text-middle">
-                          Đơn vị
-                        </td>
-                        <td className="font-bold text-center text-middle">
-                          Hãng sx
-                        </td>
-                        <td className="font-bold text-center text-middle">
-                          Số lượng
-                        </td>
-                        <td className="font-bold text-center text-middle">
-                          Đơn giá
-                        </td>
-                        <td className="font-bold text-center text-middle">
-                          Thành tiền
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          colSpan={7}
-                          className="bg-light font-bold remove-border-bold"
-                        >
-                          Hoá Chất
-                        </td>
-                        <td className="text-right bg-light remove-border-bold">
-                          60.000,00
-                        </td>
-                      </tr>
-                      <tr>
-                        <td
-                          colSpan={7}
-                          className="align-shift-2 font-bold remove-border-bold"
-                        >
-                          Hoá Chất
-                        </td>
-                        <td className="text-right remove-border-bold">
-                          60.000,00
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="text-center">1</td>
-                        <td className="text-center">21TPT1CON01</td>
-                        <td className="text-center">
-                          Cồn 70 độ(cồn sát khuẩn 70)
-                        </td>
-                        <td className="text-center">lít</td>
-                        <td></td>
-                        <td className="text-right p-3px">2</td>
-                        <td className="text-right p-3px">30.000,00</td>
-                        <td className="text-right p-3px">60.000,00</td>
-                      </tr>
-                      <tr>
-                        <td colSpan={8} className="font-bold text-right ">
-                          60.000,00
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table className="table  w-100">
-                    <tbody>
-                      <tr>
-                        <td className="font-bold ">Tổng khoản:1</td>
-                        <td className="font-bold text-right remove-border-bold">
-                          Tổng tiền : 60.000,00
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="table row"></td>
-                      </tr>
+              <td className="  w-50 p-20px">
+                <table className="table  w-100 ">
+                  <tbody>
+                    <tr className="font-bold">
+                      <td>SỞ Y TẾ BẠC LIÊU</td>
+                      <td className="text-right">Lưu: khoa Dược - VTYT</td>
+                    </tr>
+                    <tr className="">
+                      <td className="font-bold">
+                        BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU
+                      </td>
+                      <td className="text-right">số:XKL0000003/202308</td>
+                    </tr>
+                    <tr className="">
+                      <td className=" text-decoration-underline">
+                        Khoa trả: Tủ trực Dược khoa hồi sức cấp cứu
+                      </td>
+                      <td rowSpan={2} className="text-middle text-right">
+                        In lần thứ 2
+                      </td>
+                    </tr>
+                    <tr className="">
+                      <td className=" text-decoration-underline">
+                        Kho duyệt: kho lẻ Nội trú
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
-                      <tr>
-                        <td className="font-bold text-right " colSpan={2}>
-                          {" "}
-                          Bạc Liêu, ngày .... tháng ... năm 2023
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  {/* // <table calssName="table table-bordered w-100">
-        //   <tbody>
-        //     <tr>
-        //       <td className="font-bold text-right "> Bạc Liêu, ngày .... tháng ... năm 2023</td>
+                <table className="table  w-100 mt-5">
+                  <tbody>
+                    <tr>
+                      <td className="font-bold text-center">
+                        PHIẾU THU HỒI THUỐC, VẬT TƯ Y TẾ
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="font-italic text-center">
+                        (Phiếu thu hồi tủ trực - Ngày 31 tháng 01 năm 2023)
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
-        //     </tr>
-        //   </tbody>
-        // </table> */}
-                  <table className="table  w-100">
-                    <tbody className="">
-                      <tr>
-                        <td className="font-bold  ">
-                          TRƯỞNG KHOA DƯỢC - VTYT
-                        </td>
-                        <td className="font-bold w-auto text-center">
-                          THỦ KHO
-                        </td>
-                        <td className="font-bold w-auto text-center">
-                          THỐNG KÊ DƯỢC
-                        </td>
-                        <td className="font-bold w-auto text-center">
-                          NGƯỜI NHẬN
-                        </td>
-                      </tr>
-                    </tbody>
-                   
-                  </table>
-                </div>
+                <table className="table  w-100 mt-5">
+                  <tbody>
+                    <tr>
+                      <td className=" ">Lý do xuất: trả về kho lẻ nội trú</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table className="table table-bordered w-100">
+                  <tbody>
+                    <tr className="h-40px font-bold text-center ">
+                      <td className="text-middle" rowSpan={2}>
+                        STT
+                      </td>
+                      <td className="text-middle" rowSpan={2}>
+                        Mã sản phẩm
+                      </td>
+                      <td className="text-middle " rowSpan={2}>
+                        Tên sản phẩm
+                      </td>
+                      <td className="text-middle" rowSpan={2}>
+                        Đơn vị
+                      </td>
+
+                      <td className="text-middle" colSpan={2}>
+                        số lượng
+                      </td>
+
+                      <td className="text-middle" rowSpan={2}>
+                        Ghi chú
+                      </td>
+                    </tr>
+                    <tr className="font-bold text-center">
+                      <td>yêu cầu</td>
+                      <td>Thực trả</td>
+                    </tr>
+                    <tr>
+                      <td colSpan={7} className=" font-bold remove-border-bold">
+                        vật tư y tế
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colSpan={7}
+                        className="align-shift-2 font-bold remove-border-bold"
+                      >
+                        vật tư y tế
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-center">1</td>
+                      <td className="text-center">21TPT1CON01</td>
+                      <td className="text-center">
+                        Cồn 70 độ(cồn sát khuẩn 70)
+                      </td>
+                      <td className="text-center">lít</td>
+                      <td className="text-right p-3px">2</td>
+                      <td className="text-right p-3px">2</td>
+                      <td className="text-right p-3px"></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td className="font-bold  " colSpan={2}>
+                        Tổng cộng: 1
+                      </td>
+                      <td
+                        className="font-bold text-right remove-border-bold"
+                        colSpan={2}
+                      >
+                        Ngày,giờ duyệt: 19h58, 31/07/2023
+                      </td>
+                      <td
+                        className="font-bold text-right remove-border-bold"
+                        colSpan={3}
+                      >
+                        Ngày in: 19h58, 31/07/2023
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+
+               
+                <table className="table text-center font-bold  w-100 mt-10 ">
+                  <tbody>
+                    <tr>
+                      <td className="  ">
+                        Trưởng khoa dược - VTYT <br />
+                        <span className="font-italic" style={{ fontWeight: "normal" }}>
+                          (Hoặc người được uỷ quyền)
+                        </span>
+                      </td>
+                      <td className="">Người giao</td>
+                      <td className="">Người nhận</td>
+                      <td className="">
+                        Trưởng khoa lâm sàng/
+                        <br />
+                        Cận lâm sàng <br />
+                        <span className="font-italic" style={{ fontWeight: "normal" }}>
+                         ( Hoặc người được uỷ quyền)
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </td>
             </tr>
           </tbody>

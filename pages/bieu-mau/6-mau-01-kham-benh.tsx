@@ -52,7 +52,7 @@ export default function Home() {
                       <td className=" ">Mã số người khám bệnh: 230800004</td>
                     </tr>
                     <tr>
-                      <td className="">KHOA KHÁM BỆNH</td>
+                      <td className="">Khoa: phòng khám bệnh Nội 2</td>
                       <td> Số khám bệnh:118367</td>
                     </tr>
                     <tr>
@@ -72,7 +72,7 @@ export default function Home() {
                   <tbody>
                     <tr>
                       <td className=" text-center font-bold  font-size-16">
-                        BẢNG KÊ CHI PHÍ ĐIỀU TRỊ NỘI TRÚ
+                        BẢNG KÊ CHI PHÍ KHÁM BỆNH
                       </td>
                     </tr>
                   </tbody>
@@ -492,350 +492,105 @@ export default function Home() {
                   </tbody>
                 </table>
                 {/* -------------------------------------------------------------------------------- */}
-               
-                        <table className=" w-100 font-size-13  ">
-                          <thead>
-                            <tr>
-                              <td className="">
-                                {" "}
-                                II. Phần Chi phí khám bệnh, chữa bệnh
-                              </td>
-                            </tr>
-                          </thead>
 
+                <table className=" w-100 font-size-13  ">
+                  <thead>
+                    <tr>
+                      <td className="">
+                        {" "}
+                        II. Phần Chi phí khám bệnh, chữa bệnh
+                      </td>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table className=" w-100">
                           <tbody>
-                            <tr>
-                              <td>
-                                <table className=" w-100">
-                                  <tbody>
-                                    <tr className="">
-                                      <td className="">(4)Mã thẻ BHYT:</td>
-                                      <td className="">
-                                        <table className=" table-bordered w-300px">
-                                          <tbody>
-                                            <tr>
-                                              <td className="w-auto text-middle text-center ">
-                                                GD
-                                              </td>
-                                              <td className="w-auto text-middle text-center">
-                                                4
-                                              </td>
-                                              <td className="w-auto text-middle text-center">
-                                                95
-                                              </td>
-                                              <td className="w-40 text-middle text-center">
-                                                952101882395005
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>{" "}
-                                      <td className="w-25">
-                                        Giá trị từ:&nbsp;
-                                        <span
-                                          className="border-bottom-wrapper text-with-dotted "
-                                          style={{
-                                            width: "calc(100% - 150px)",
-                                          }}
-                                        >
-                                          4/11/2023
-                                        </span>
-                                      </td>{" "}
-                                      <td className="w-25">
-                                        đến:&nbsp;
-                                        <span
-                                          className="border-bottom-wrapper text-with-dotted "
-                                          style={{
-                                            width: "calc(100% - 150px)",
-                                          }}
-                                        >
-                                          4/11/2023
-                                        </span>
-                                      </td>
-                                      <td className="">
-                                        Mức hưởng:&nbsp;
-                                        <table className=" table-bordered   display-inline ">
-                                          <tbody>
-                                            <tr>
-                                              <td className=" display-inline pr-20px pl-20px">
-                                                100
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </td>{" "}
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <table className="w-50">
+                            <tr className="">
+                              <td className="">(4)Mã thẻ BHYT:</td>
+                              <td className="">
+                                <table className=" table-bordered w-300px">
                                   <tbody>
                                     <tr>
-                                      <td className="">
-                                        Giá trị từ:&nbsp;
-                                        <span
-                                          className="border-bottom-wrapper text-with-dotted "
-                                          style={{
-                                            width: "calc(100% - 150px)",
-                                          }}
-                                        >
-                                          4/11/2023
-                                        </span>
-                                      </td>{" "}
-                                      <td className="">
-                                        đến:&nbsp;
-                                        <span
-                                          className="border-bottom-wrapper text-with-dotted "
-                                          style={{
-                                            width: "calc(100% - 150px)",
-                                          }}
-                                        >
-                                          4/11/2023
-                                        </span>
+                                      <td className="w-auto text-middle text-center ">
+                                        GD
+                                      </td>
+                                      <td className="w-auto text-middle text-center">
+                                        4
+                                      </td>
+                                      <td className="w-auto text-middle text-center">
+                                        95
+                                      </td>
+                                      <td className="w-40 text-middle text-center">
+                                        952101882395005
                                       </td>
                                     </tr>
                                   </tbody>
                                 </table>
+                              </td>{" "}
+                              <td className="w-25">
+                                Giá trị từ:&nbsp;
+                                <span
+                                  className="border-bottom-wrapper text-with-dotted "
+                                  style={{
+                                    width: "calc(100% - 150px)",
+                                  }}
+                                >
+                                  4/11/2023
+                                </span>
+                              </td>{" "}
+                              <td className="w-25">
+                                đến:&nbsp;
+                                <span
+                                  className="border-bottom-wrapper text-with-dotted "
+                                  style={{
+                                    width: "calc(100% - 150px)",
+                                  }}
+                                >
+                                  4/11/2023
+                                </span>
                               </td>
+                              <td className="">
+                                Mức hưởng:&nbsp;
+                                <table className=" table-bordered   display-inline ">
+                                  <tbody>
+                                    <tr>
+                                      <td className=" display-inline pr-20px pl-20px">
+                                        100
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>{" "}
                             </tr>
                           </tbody>
                         </table>
-
-                        <table className="  table-bordered w-100 font-size-13">
-                          <thead>
-                            <tr>
-                              <th rowSpan={2}>Nội dung</th>
-                              <th rowSpan={2}>Đơn vị tính</th>
-                              <th rowSpan={2}>Số lượng </th>
-                              <th rowSpan={2}>Đơn giá BV</th>
-                              <th rowSpan={2}>Đơn giá BH</th>
-                              <th rowSpan={2}>Tỷ lệ thanh toán theo dịch vụ</th>
-                              <th rowSpan={2}>Thành tiền BV</th>
-                              <th rowSpan={2}>Tỷ Lệ Thanh Toán BHYT</th>
-                              <th rowSpan={2}>Thành tiền BH</th>
-
-                              <th colSpan={4}>Nguồn thanh toán(đồng)</th>
-                            </tr>
-                            <tr>
-                              {" "}
-                              <th>Quỹ BHYT</th>
-                              <th>Người bệnh cùng chi trả</th>
-                              <th className="w-20">Khác</th>
-                              <th>Người bệnh tự trả</th>
-                            </tr>
-                            <tr>
-                              <th>(1)</th>
-                              <th>(2)</th>
-                              <th>(3)</th>
-                              <th>(4)</th>
-                              <th>(5)</th>
-                              <th>(6)</th>
-                              <th>(7)</th>
-                              <th>(8)</th>
-                              <th>(9)</th>
-
-                              <th>(10)</th>
-                              <th>(11)</th>
-                              <th>(12)</th>
-                              <th>(13)</th>
-                            </tr>
-                          </thead>
+                        <table className="w-50">
                           <tbody>
                             <tr>
-                              <td colSpan={6} className="text-left font-bold">
-                                Chuẩn đoán hình ảnh
-                              </td>
-                              <td className="font-bold text-right p-3px">
-                                87.800,00
-                              </td>
-                              <td className=""></td>
-                              <td className="font-bold text-right p-3px">
-                                87.800,00
-                              </td>
-                              <td className="font-bold text-right p-3px">
-                                87.800,00
-                              </td>
-                              <td className="font-bold text-right p-3px">
-                                0,00
-                              </td>
-                              <td className="font-bold text-right p-3px">
-                                0,00
-                              </td>
-                              <td className="font-bold text-right p-3px">
-                                0,00
-                              </td>
-                            </tr>
-                            {userData.map((user) => (
-                              <tr className="" key={user.noiDung}>
-                                <td className="w-150px p-3px">
-                                  {user.noiDung}
-                                </td>
-                                <td className="text-center p-3px">
-                                  {user.donViTinh}
-                                </td>
-                                <td className=" text-right p-3px">
-                                  {user.soLuong}
-                                </td>
-                                <td className=" text-right p-3px">
-                                  {user.donGiaBV}
-                                </td>
-                                <td className=" text-right p-3px">
-                                  {user.donGiaBH}
-                                </td>
-                                <td className=" text-right p-3px">
-                                  {user.tyLeThanhToanDV}
-                                </td>
-                                <td className="font-bold text-right p-3px">
-                                  {user.thanhTienBV}
-                                </td>
-                                <td className="font-bold text-right p-3px">
-                                  {user.tyLeThanhToanBHYT}
-                                </td>
-                                <td className="font-bold text-right p-3px">
-                                  {user.thanhTienBH}
-                                </td>
-                                <td className="font-bold text-right p-3px">
-                                  {user.quyBHYT}
-                                </td>
-                                <td className="font-bold text-right p-3px">
-                                  {user.nguoiBenhCungChiTra}
-                                </td>
-                                <td className="font-bold text-right p-3px">
-                                  {user.khac}
-                                </td>
-
-                                <td className="font-bold  text-right p-3px">
-                                  {user.nguoiBenhTuTra}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                          <tfoot>
-                            <tr className="">
-                              <td
-                                colSpan={6}
-                                className="font-bold text-right pr-20"
-                              >
-                                Tổng Cộng
-                              </td>
-                              <td className="font-bold text-right">
-                                87.800,00
-                              </td>
-                              <td className="font-bold text-right"></td>
-                              <td className="font-bold text-right">
-                                87.800,00
-                              </td>
-                              <td className="font-bold text-right">
-                                87.800,00
-                              </td>
-                              <td className="font-bold text-right">0,00</td>
-                              <td className="font-bold text-right">0,00</td>
-
-                              <td className="font-bold text-right">0,00</td>
-                            </tr>
-                          </tfoot>
-                        </table>
-
-                        <table className=" w-100 font-size-13">
-                          <tbody>
-                            <tr className="w-100">
-                              <td className="w-100">
-                                Tổng chi phí lần khám bệnh/ cả đợt điều
-                                trị:&nbsp;
+                              <td className="">
+                                Giá trị từ:&nbsp;
                                 <span
                                   className="border-bottom-wrapper text-with-dotted "
                                   style={{
-                                    width: "calc(100% - 300px)",
+                                    width: "calc(100% - 150px)",
                                   }}
                                 >
-                                  87.000,00 đồng
+                                  4/11/2023
                                 </span>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td className="w-100">
-                                Viết bằng chữ :&nbsp;
+                              </td>{" "}
+                              <td className="">
+                                đến:&nbsp;
                                 <span
                                   className="border-bottom-wrapper text-with-dotted "
                                   style={{
-                                    width: "calc(100% - 300px)",
+                                    width: "calc(100% - 150px)",
                                   }}
                                 >
-                                  tám mươi bảy nghìn tám trăm đồng
+                                  4/11/2023
                                 </span>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              {" "}
-                              <td className="w-100">
-                                Trong đó số tiền do:&nbsp;
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td className="w-100">
-                                Quỹ BHYT thanh toán:&nbsp;
-                                <span
-                                  className="border-bottom-wrapper text-with-dotted "
-                                  style={{
-                                    width: "calc(100% - 300px)",
-                                  }}
-                                >
-                                  87.000,000 đồng
-                                </span>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td className="w-100">
-                                Người bệnh trã, trong đó:&nbsp;
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td className="w-100">
-                                + Cung trả trong phạm vi BHYT:&nbsp;
-                                <span
-                                  className="border-bottom-wrapper text-with-dotted "
-                                  style={{
-                                    width: "calc(100% - 300px)",
-                                  }}
-                                >
-                                  87.000,00 đồng
-                                </span>
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <td className="w-100">
-                                + Các khoản phải trả khác:&nbsp;
-                                <span
-                                  className="border-bottom-wrapper text-with-dotted "
-                                  style={{
-                                    width: "calc(100% - 300px)",
-                                  }}
-                                >
-                                  87.000,00 đồng
-                                </span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="w-100">Nguồn khác:&nbsp;</td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <table className="table  font-size-11 w-100  font-italic">
-                          <tbody>
-                            <tr>
-                              <td className="  ">
-                                Tái khám xin mang theo đơn này
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className=" bt-1">
-                                Ngày giờ in: 07/08/2023 10:30:37 AM
                               </td>
                             </tr>
                           </tbody>
@@ -844,47 +599,274 @@ export default function Home() {
                     </tr>
                   </tbody>
                 </table>
-        
+
+                <table className="  table-bordered w-100 font-size-13">
+                  <thead>
+                    <tr>
+                      <th rowSpan={2}>Nội dung</th>
+                      <th rowSpan={2}>Đơn vị tính</th>
+                      <th rowSpan={2}>Số lượng </th>
+                      <th rowSpan={2}>Đơn giá BV</th>
+                      <th rowSpan={2}>Đơn giá BH</th>
+                      <th rowSpan={2}>Tỷ lệ thanh toán theo dịch vụ</th>
+                      <th rowSpan={2}>Thành tiền BV</th>
+                      <th rowSpan={2}>Tỷ Lệ Thanh Toán BHYT</th>
+                      <th rowSpan={2}>Thành tiền BH</th>
+
+                      <th colSpan={4}>Nguồn thanh toán(đồng)</th>
+                    </tr>
+                    <tr>
+                      {" "}
+                      <th>Quỹ BHYT</th>
+                      <th>Người bệnh cùng chi trả</th>
+                      <th className="w-20">Khác</th>
+                      <th>Người bệnh tự trả</th>
+                    </tr>
+                    <tr>
+                      <th>(1)</th>
+                      <th>(2)</th>
+                      <th>(3)</th>
+                      <th>(4)</th>
+                      <th>(5)</th>
+                      <th>(6)</th>
+                      <th>(7)</th>
+                      <th>(8)</th>
+                      <th>(9)</th>
+
+                      <th>(10)</th>
+                      <th>(11)</th>
+                      <th>(12)</th>
+                      <th>(13)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colSpan={6} className="text-left font-bold">
+                        khám bệnh
+                      </td>
+                      <td className="font-bold text-right p-3px">87.800,00</td>
+                      <td className=""></td>
+                      <td className="font-bold text-right p-3px">87.800,00</td>
+                      <td className="font-bold text-right p-3px">87.800,00</td>
+                      <td className="font-bold text-right p-3px">0,00</td>
+                      <td className="font-bold text-right p-3px">0,00</td>
+                      <td className="font-bold text-right p-3px">0,00</td>
+                    </tr>
+                    {userData.map((user) => (
+                      <tr className="" key={user.noiDung}>
+                        <td className="w-150px p-3px">{user.noiDung}</td>
+                        <td className="text-center p-3px">{user.donViTinh}</td>
+                        <td className=" text-right p-3px">{user.soLuong}</td>
+                        <td className=" text-right p-3px">{user.donGiaBV}</td>
+                        <td className=" text-right p-3px">{user.donGiaBH}</td>
+                        <td className=" text-right p-3px">
+                          {user.tyLeThanhToanDV}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.thanhTienBV}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.tyLeThanhToanBHYT}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.thanhTienBH}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.quyBHYT}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.nguoiBenhCungChiTra}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.khac}
+                        </td>
+
+                        <td className="font-bold  text-right p-3px">
+                          {user.nguoiBenhTuTra}
+                        </td>
+                      </tr>
+                    ))}
+                    <tr>
+                      <td colSpan={6} className="text-left font-bold">
+                        Chuẩn đoán hình ảnh
+                      </td>
+                      <td className="font-bold text-right p-3px">87.800,00</td>
+                      <td className=""></td>
+                      <td className="font-bold text-right p-3px">87.800,00</td>
+                      <td className="font-bold text-right p-3px">87.800,00</td>
+                      <td className="font-bold text-right p-3px">0,00</td>
+                      <td className="font-bold text-right p-3px">0,00</td>
+                      <td className="font-bold text-right p-3px">0,00</td>
+                    </tr>
+                    {userData.map((user) => (
+                      <tr className="" key={user.noiDung}>
+                        <td className="w-150px p-3px">{user.noiDung}</td>
+                        <td className="text-center p-3px">{user.donViTinh}</td>
+                        <td className=" text-right p-3px">{user.soLuong}</td>
+                        <td className=" text-right p-3px">{user.donGiaBV}</td>
+                        <td className=" text-right p-3px">{user.donGiaBH}</td>
+                        <td className=" text-right p-3px">
+                          {user.tyLeThanhToanDV}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.thanhTienBV}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.tyLeThanhToanBHYT}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.thanhTienBH}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.quyBHYT}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.nguoiBenhCungChiTra}
+                        </td>
+                        <td className="font-bold text-right p-3px">
+                          {user.khac}
+                        </td>
+
+                        <td className="font-bold  text-right p-3px">
+                          {user.nguoiBenhTuTra}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                  <tfoot>
+                    <tr className="">
+                      <td colSpan={6} className="font-bold text-right pr-20">
+                        Tổng Cộng
+                      </td>
+                      <td className="font-bold text-right">87.800,00</td>
+                      <td className="font-bold text-right"></td>
+                      <td className="font-bold text-right">87.800,00</td>
+                      <td className="font-bold text-right">87.800,00</td>
+                      <td className="font-bold text-right">0,00</td>
+                      <td className="font-bold text-right">0,00</td>
+
+                      <td className="font-bold text-right">0,00</td>
+                    </tr>
+                  </tfoot>
+                </table>
+
+                <table className=" w-100 font-size-13">
+                  <tbody>
+                    <tr className="w-100">
+                      <td className="w-100">
+                        Tổng chi phí lần khám bệnh/ cả đợt điều trị:&nbsp;
+                        <span
+                          className="border-bottom-wrapper text-with-dotted "
+                          style={{
+                            width: "calc(100% - 300px)",
+                          }}
+                        >
+                          87.000,00 đồng
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="w-100">
+                        Viết bằng chữ :&nbsp;
+                        <span
+                          className="border-bottom-wrapper text-with-dotted "
+                          style={{
+                            width: "calc(100% - 300px)",
+                          }}
+                        >
+                          tám mươi bảy nghìn tám trăm đồng
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      {" "}
+                      <td className="w-100">Trong đó số tiền do:&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                      <td className="w-100">
+                        Quỹ BHYT thanh toán:&nbsp;
+                        <span
+                          className="border-bottom-wrapper text-with-dotted "
+                          style={{
+                            width: "calc(100% - 300px)",
+                          }}
+                        >
+                          87.000,000 đồng
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="w-100">Người bệnh trã, trong đó:&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                      <td className="w-100">
+                        + Cung trả trong phạm vi BHYT:&nbsp;
+                        <span
+                          className="border-bottom-wrapper text-with-dotted "
+                          style={{
+                            width: "calc(100% - 300px)",
+                          }}
+                        >
+                          87.000,00 đồng
+                        </span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="w-100">
+                        + Các khoản phải trả khác:&nbsp;
+                        <span
+                          className="border-bottom-wrapper text-with-dotted "
+                          style={{
+                            width: "calc(100% - 300px)",
+                          }}
+                        >
+                          87.000,00 đồng
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="w-100">Nguồn khác:&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table className="w-100 text-center ">
+          <tbody>
+            <tr className="h-200px">
+              <td className="w-50">
+                <span></span><br/>
+                <span className="font-bold">NGƯỜI LẬP BẢNG KÊ</span><br/>
+                <span className="font-italic"> (Ký, ghi rõ họ tên)</span>
+              </td>
+              <td> <span>Ngày 19 tháng 07 năm 2023</span><br/>
+                <span className="font-bold">KẾ TOÁN VIỆN PHÍ</span><br/>
+                <span className="font-italic">(Ký, ghi rõ họ tên)</span>
+                </td>
+            </tr>
+            <tr className="h-200px">
+            <td className="w-50 ">
+                <span></span><br/>
+                <span className="font-bold">XÁC NHẬN CỦA NGƯỜI BỆNH</span><br/>
+                <span className="font-italic"> (Ký, ghi rõ họ tên)</span><br/>
+                <span className="font-bold">(Tôi đã nhận ... phim ... Xquang/CT/MRI)</span>
+              </td>
+              <td> <span>Ngày .. tháng .. năm ....</span><br/>
+                <span className="font-bold">GIÁM ĐỊNH BHYT</span><br/>
+                <span className="font-italic"> (Ký, ghi rõ họ tên)</span>
+                </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
-
-    // {/* <div className=" paper A4 landscape ">
-    //   <section className="sheet padding-5mm ">
-    //     <table className=" table w-100 font-size-13 ">
-    //       <tbody>
-    //         <tr>
-    //           <td>
-
-    //           </td>
-
-    //         </tr>
-    //       </tbody>
-    //     </table>
-    //     <table className="container"></table>
-
-    //     <table className="table mt-5 font-size-11 w-100  font-italic">
-    //       <tbody>
-    //         <tr>
-    //           <td className="  ">Tái khám xin mang theo đơn này</td>
-    //         </tr>
-    //         <tr>
-    //           <td className=" bt-1">Ngày giờ in: 07/08/2023 10:30:37 AM</td>
-    //         </tr>
-    //       </tbody>
-    //     </table>
-    //     <table className="table   w-100 text-center font-size-12 ">
-    //       <tbody>
-    //         <tr>
-    //           <td className="w-50"></td>
-    //           <td className=" ">Ngày 31 tháng 7 năm 2023</td>
-    //         </tr>
-    //         <tr>
-    //           <td className="font-bold"></td>
-    //           <td className="font-bold">Bác sĩ điều trị</td>
-    //         </tr>
-    //       </tbody>
-    //     </table>
-    //   </section>
-    // </div> */}
   );
 }

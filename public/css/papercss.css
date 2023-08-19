@@ -1537,11 +1537,15 @@
      /* .tfoot {
       display: table-footer-group;
     } */
-
+    .border-collapse{
+      border-collapse: collapse;
+      border: none;
+    }
 
 div{page-break-inside: avoid;
   page-break-after: avoid;
 }
+
 
 /* @media print {
   div{page-break-inside: avoid;
