@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start-json-server": "json-server --port=5000 --watch db.json"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -58,6 +59,7 @@
     "react-split-grid": "^1.0.4",
     "split-grid": "^1.0.11",
     "styled-components": "^6.0.0-rc.1",
+    "swr": "^2.2.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   },

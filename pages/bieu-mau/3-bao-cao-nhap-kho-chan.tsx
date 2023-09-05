@@ -1,99 +1,32 @@
-//import React from "react";
-//import "bootstrap/dist/css/bootstrap.min.css";
+import useSWR from "swr";
+import { useRouter } from "next/router";
+import React from "react";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+const calculateTotal = (data) => {
+  if (data?.data) {
+    data.data.tongthanhtien = 0;
+    if (data.data.chittiet) {
+      data.data.chittiet.forEach((chitiet) => {
+        chitiet.sotien = chitiet.congty_sotien;
+        data.data.tongthanhtien += chitiet.sotien;
+      });
+    }
+  }
+};
 
 export default function Home() {
-  const userData = [
-    {
-      stt: 1,
-      congty: "Công Ty Cổ Phần Dược Phẩm Trung ương Codupha",
-      sotien: "1.503.990",
-      ghichu: "",
-    },
-    {
-      stt: 2,
-      congty: "Công Ty TNHH Dược Phẩm Tường Thành",
-      sotien: "567.000",
-      ghichu: "",
-    },
-    {
-      stt: 3,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar  ",
-      sotien: "537.900",
-      ghichu: "",
-    },
-    {
-      stt: 4,
-      congty: "Công Ty Cổ Phần Dược Phẩm Minh Dân",
-      sotien: "11.766.000",
-      ghichu: "",
-    },
-    {
-      stt: 5,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar1",
-      sotien: "1.585.600",
-      ghichu: "",
-    },
-    {
-      stt: 6,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar",
-      sotien: "1.260.000",
-      ghichu: "",
-    },
-    {
-      stt: 7,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 8,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 9,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 10,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar ",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 11,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar 1",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 12,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar 1",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 13,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar 1",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 14,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar 1",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-    {
-      stt: 15,
-      congty: "Công Ty Cổ Phần Hoá-Dược Phẩm Mekophar 1",
-      sotien: "1.000.000",
-      ghichu: "",
-    },
-  ];
+  const router = useRouter();
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5000/bm_baocaonhapkhochan_3/${router.query?.id}`,
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  calculateTotal(data);
 
   return (
     <div className=" paper A4">
@@ -102,11 +35,11 @@ export default function Home() {
           <tbody>
             <tr>
               <td className="font-bold  text-center font-size-17">
-                BÁO CÁO NHẬP KHO CHẴN THUỐC
+                {data?.data?.tieude}
               </td>
             </tr>
             <tr>
-              <td className="font-bold  text-center">Tháng 7 năm 2023</td>
+              <td className="font-bold  text-center">{data?.data?.ngaylap}</td>
             </tr>
           </tbody>
         </table>
@@ -121,12 +54,14 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {userData.map((user) => (
-              <tr key={user.stt}>
-                <td className="font-bold  text-center">{user.stt}</td>
-                <td className="font-bold p-3px">{user.congty}</td>
-                <td className="font-bold text-right p-3px">{user.sotien}</td>
-                <td className="font-bold">{user.ghichu}</td>
+            {data?.data?.chittiet?.map((chitiet, index) => (
+              <tr key={index}>
+                <td className="font-bold  text-center">{chitiet.stt}</td>
+                <td className="font-bold w-50 p-3px">{chitiet.congty_tencongty}</td>
+                <td className="font-bold text-right p-3px">
+                  {chitiet.congty_sotien}
+                </td>
+                <td className="font-bold">{chitiet.ghichu}</td>
               </tr>
             ))}
           </tbody>
@@ -135,31 +70,31 @@ export default function Home() {
               <td colSpan={2} className="font-bold text-right pr-20 ">
                 Tổng Cộng
               </td>
-              <td className="font-bold text-right p-3px">12.385.585</td>
+              <td className="font-bold text-right p-3px">
+                {data?.data?.tongthanhtien}{" "}
+              </td>
             </tr>
           </tfoot>
         </table>
         <table className="table mt-20px  w-100 text-center ">
-            
           <tbody>
             <tr>
               <td className="w-50"></td>
-              <td className=" font-italic">Bạc Liêu, ngày 31 tháng 7 năm 2023</td>
+              <td className=" font-italic">
+              {data?.data?.kyten_noiky}, {data?.data?.kyten_ngayky}
+              </td>
             </tr>
             <tr>
               <td className="font-bold">TRƯỞNG KHOA DƯỢC_VTYT</td>
               <td className="font-bold">NGƯỜI LẬP</td>
             </tr>
             <tr>
-              
               <td className="table m-40px"></td>
             </tr>
             <tr>
               <td className=""></td>
               <td className="font-bold">DS ĐOÀN HOÀNG SAO</td>
             </tr>
-            
-
           </tbody>
         </table>
       </section>

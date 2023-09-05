@@ -1,185 +1,168 @@
-import { hkdfSync } from "crypto";
+import useSWR from "swr";
+import { useRouter } from "next/router";
+import React from "react";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+const calculateTotal = (data) => {
+  let total = 0;
+  if (data?.data?.chitiet) {
+ 
+        data.data.chitiet.forEach((chitiet) => {
+          chitiet.chitiet_thanhtien =
+            chitiet.chitietxuat_soluong * chitiet.chitietxuat_dongia;
+            total += chitiet.chitiet_thanhtien;
+        });
+   
+    data.data.tongsotien = total;
+  }
+};
 
 export default function Home() {
-  const userData = [
-    {
-      stt: 1,
-      ma: "META0067",
-      tensanpham: "Methylperhydiion 4mg",
-      donvi: " Viên",
-      hangsx: "Công Ty Cổ Phần Dược Phẩm Quảng Bình Việt Nam",
-      solo: "1222",
-      hsd: "12/12/2023",
-      soluong: "12",
-      dongia: "15.000,00",
-      thanhtien: "150.00,00",
-      ghichu: "",
-    },
-    {
-        stt: 2,
-        ma: "META0067",
-        tensanpham: "Methylperhydiion 4mg",
-        donvi: " Viên",
-        hangsx: "Công Ty Cổ Phần Dược Phẩm Quảng Bình Việt Nam",
-        solo: "1222",
-        hsd: "12/12/2023",
-        soluong: "12",
-        dongia: "15.000,00",
-        thanhtien: "150.00,00",
-        ghichu: "",
-      },
-      {
-        stt: 3,
-        ma: "META0067",
-        tensanpham: "Methylperhydiion 4mg",
-        donvi: " Viên",
-        hangsx: "Công Ty Cổ Phần Dược Phẩm Quảng Bình Việt Nam",
-        solo: "1222",
-        hsd: "12/12/2023",
-        soluong: "12",
-        dongia: "15.000,00",
-        thanhtien: "150.00,00",
-        ghichu: "",
-      },{
-        stt: 4,
-        ma: "META0067",
-        tensanpham: "Methylperhydiion 4mg",
-        donvi: " Viên",
-        hangsx: "Công Ty Cổ Phần Dược Phẩm Quảng Bình Việt Nam",
-        solo: "1222",
-        hsd: "12/12/2023",
-        soluong: "12",
-        dongia: "15.000,00",
-        thanhtien: "150.00,00",
-        ghichu: "",
-      },{
-        stt: 5,
-        ma: "META0067",
-        tensanpham: "Methylperhydiion 4mg",
-        donvi: " Viên",
-        hangsx: "Công Ty Cổ Phần Dược Phẩm Quảng Bình Việt Nam",
-        solo: "1222",
-        hsd: "12/12/2023",
-        soluong: "12",
-        dongia: "15.000,00",
-        thanhtien: "150.00,00",
-        ghichu: "",
-      },
-  ];
+  const router = useRouter();
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5000/bm_phieuxuatkho_17/${router.query?.id}`,
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  calculateTotal(data);
 
   return (
-    <div className=" paper A4 font-size-13">
+    <div className="paper A4 font-size-13">
       <section className="sheet padding-10mm">
-        <table className="table ">
+        <table className="table w-100 ">
           <tbody>
             <tr className="text-center">
-              <td>SỞ Y TẾ BẠC LIÊU</td>
+              <td className="w-50">{data?.data?.donvi_cha_ten}</td>
             </tr>
             <tr className="text-center">
-              <td className="font-bold w-50">
-                BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU
-              </td>
-              <td className="text-right">Số:XKTDT00000000044/202307</td>
+              <td className="font-bold">{data?.data?.donvi_ten}</td>
+              <td className="">Số:{data?.data?.so}</td>
             </tr>
           </tbody>
         </table>
-        <table className=" w-100 row ">
+
+        <table className="table  w-100">
           <tbody>
             <tr>
-              <td className="font-bold  text-center font-size-17">
-                PHIẾU XUẤT KHO
+              <td className="font-bold text-center font-size-17 mt-5px">
+                {data?.data?.tieude}
               </td>
             </tr>
             <tr>
-              <td className="  text-center">Ngày 23 tháng 7 năm 2023</td>
+              <td className=" text-center"> {data?.data?.ngay_lap}</td>
             </tr>
           </tbody>
         </table>
+
         <table className="table  w-100 mt-5px">
           <tbody>
             <tr>
-              <td className=" ">Số chứng từ</td>
-              <td>Loại sản phẩm</td>
+              <td className=" ">Số chứng từ: {data?.data?.sochungtu}</td>
+              <td>Loại sản phẩm: {data?.data?.loai_sanpham}</td>
             </tr>
             <tr>
-              <td className="  "> Nơi nhận: VŨ THỊ LÊ QUYÊN</td>
-              <td>Kho xuất: Kho lẻ Ngoại trú</td>
+              <td className="  "> Nơi nhận: {data?.data?.noinhan}</td>
+              <td>Kho xuất: {data?.data?.kho_xuat}</td>
             </tr>
             <tr>
               <td className="" colSpan={2}>
-                Lý do xuất: Phát thuốc cho bệnh nhân
+                Lý do xuất: {data?.data?.lydo_xuat}
               </td>
             </tr>
           </tbody>
         </table>
-
-        <table className="table  table-bordered w-100">
-          <thead>
-            <tr className="text-middle text-center font-bold">
-              <th>STT</th>
-              <th>Mã</th>
-              <th>Tên sản phẩm</th>
-              <th>Đơn vị</th>
-              <td>Hãng, nước sản xuất</td>
-              <td>Số lô</td>
-              <td>Hạn sử dụng</td>
-              <td>Số lượng</td>
-              <td>Đơn giá</td>
-              <td>Thành tiền</td>
-              <td>Ghi chú</td>
+        <table className="table table-bordered  w-100">
+          <tbody className="text-middle">
+            <tr className=" ">
+              <td className="font-bold text-center text-middle">STT</td>
+              <td className="font-bold text-center text-middle">Mã </td>
+              <td className="font-bold text-center text-middle ">
+                Tên sản phẩm
+              </td>
+              <td className="font-bold text-center text-middle p-5px">
+                Đơn vị
+              </td>
+              <td className="font-bold text-center text-middle p-5px">
+                Hãng, nước sản xuất
+              </td>
+              <td className="font-bold text-center text-middle p-5px">Số lô</td>
+              <td className="font-bold text-center text-middle p-5px">
+                Hạn sử dụng
+              </td>
+              <td className="font-bold text-center text-middle p-5px">
+                Số lượng
+              </td>
+              <td className="font-bold text-center text-middle p-5px">
+                Đơn giá
+              </td>
+              <td className="font-bold text-center text-middle p-5px">
+                Thành tiền
+              </td>
+              <td className="font-bold text-center text-middle p-5px">
+                Ghi chú
+              </td>
             </tr>
-          </thead>
-          <tbody>
-            {userData.map((user) => (
-              <tr key={user.stt} className="text-middle text-center">
-                <td className="text-center">{user.stt}</td>
-                <td className=" ">{user.ma}</td>
-                <td className=" text-right W-15 ">{user.tensanpham}</td>
-                <td className="">{user.donvi}</td>
-                <td className="">{user.hangsx}</td>
-                <td className="">{user.solo}</td>
-                <td className="">{user.hsd}</td>
-                <td className="">{user.soluong}</td>
-                <td className="">{user.dongia}</td>
-                <td className="">{user.thanhtien}</td>
-                <td className="">{user.ghichu}</td>
+
+            {data?.data?.chitiet?.map((chitiet, chitietIndex) => (
+              <tr key={chitietIndex} className="text-middle">
+                <td className="text-center">{chitiet.stt}</td>
+                <td className="text-center">{chitiet.sanpham_ma}</td>
+                <td className="text-center">
+                  {chitiet.sanpham_ten}({chitiet.sanpham_hoatchat}){" "}
+                  {chitiet.sanpham_nongdohamluong}
+                </td>
+                <td className="text-center">{chitiet.sanpham_donvitinh}</td>
+                <td className="text-center">{chitiet.sanpham_hangsanxuat}</td>
+                <td className="text-center">{chitiet.sanpham_solo}</td>
+                <td className="text-center">{chitiet.sanpham_hansudung}</td>
+
+                <td className="text-right p-3px">
+                  {chitiet.chitietxuat_soluong}
+                </td>
+                <td className="text-right p-3px">
+                  {chitiet.chitietxuat_dongia}
+                </td>
+                <td className="text-right p-3px">
+                  {chitiet.chitiet_thanhtien}
+                </td>
+                <td className="text-center">{chitiet.ghichu}</td>
               </tr>
             ))}
-            
           </tbody>
-         
-         
-
         </table>
-        <table className="w-100">
-            <tbody>
-            <tr>
-                <td className=" ">Tổng số tiền:&emsp;900.000,00</td>
-              </tr>
-              <tr>
-                <td className=" ">Tổng số tiền (viết bằng chữ):&emsp; Chín trăm ngàn đồng</td>
-              </tr>
-  
-            </tbody>
-        </table>
-        <table className="table mt-20px  w-100 text-center ">
+        <table className="table  w-100">
           <tbody>
-            
             <tr>
-              <td className="w-50"></td>
-              <td ></td>
-
-              <td className=" font-italic">
-                Bạc Liêu, ngày 31 tháng 7 năm 2023
+              <td className=" ">Tổng số tiền:&emsp;{data?.data?.tongsotien}</td>
+            </tr>
+            <tr>
+              <td className=" ">
+                Tổng số tiền (viết bằng chữ):&emsp;{" "}
+                {data?.data?.tongsotien_bangchu}
               </td>
             </tr>
+
             <tr>
-              <td className="font-bold">TRƯỞNG KHOA DƯỢC_VTYT</td>
-              <td className="font-bold">NGƯỜI NHẬN</td>
-              <td className="font-bold">NGƯỜI LẬP</td>
+              <td className=" text-right " colSpan={2}>
+                {" "}
+                {data?.data?.kyten_noiky}, {data?.data?.kyten_ngayky}
+              </td>
             </tr>
-          
-            
+          </tbody>
+        </table>
+
+        <table className="table text-center w-100">
+          <tbody>
+            <tr>
+              <td className="font-bold w-30 ">NGƯỜI NHẬN</td>
+              <td className="font-bold w-30 text-center">THỦ KHO</td>
+
+              <td className="font-bold text-center">KẾ TOÁN</td>
+            </tr>
           </tbody>
         </table>
       </section>

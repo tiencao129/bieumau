@@ -1,4 +1,19 @@
+import useSWR from "swr";
+import { useRouter } from "next/router";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
 export default function Home() {
+  const router = useRouter();
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5000/bm_xuatvientro_15/${router.query?.id}`,
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  console.log(data);
   const userData = [
     {
       stt: 1,
@@ -140,11 +155,11 @@ export default function Home() {
         <table className="table w-100 ">
           <tbody>
             <tr className="text-center">
-              <td className="w-50">SỞ Y TẾ BẠC LIÊU</td>
+              <td className="w-50">{data?.data?.donvi_cha_ten}</td>
             </tr>
             <tr className="text-center">
-              <td className="font-bold">BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU</td>
-              <td className="">Số:XHT0000000001/202308</td>
+              <td className="font-bold">{data?.data?.donvi_ten}</td>
+              <td className="">{data?.data?.so_phieu}</td>
             </tr>
           </tbody>
         </table>
@@ -153,11 +168,11 @@ export default function Home() {
           <tbody>
             <tr>
               <td className="font-bold text-center font-size-17 ">
-                PHIẾU XUẤT THUỐC
+                  {data?.data?.tieude}
               </td>
             </tr>
             <tr>
-              <td className=" text-center"> Ngày 4 Tháng 7 năm 2023</td>
+              <td className=" text-center"> {data?.data?.ngay_lap}</td>
             </tr>
           </tbody>
         </table>
@@ -165,20 +180,19 @@ export default function Home() {
         <table className="table  w-100 mt-5px">
           <tbody>
             <tr>
-              <td className=" ">Nơi nhận: TTYT Huyện Vĩnh Lợi</td>
-              <td>Kho xuất: Kho thuốc chương trình Lao</td>
+              <td className=" ">Nơi nhận: {data?.data?.noi_nhan}</td>
+              <td>Kho xuất: {data?.data?.kho_xuat }</td>
             </tr>
-           
-            
+
             <tr>
               <td className="" colSpan={2}>
-                Lý do xuất: Xuất theo phân bổ được duyệt
+                Lý do xuất: {data?.data?.ly_do }
               </td>
             </tr>
           </tbody>
         </table>
         <table className="table table-bordered w-100">
-          <thead >
+          <thead>
             <tr>
               <th className="p-5px">STT</th>
               <th className="p-5px">Mã</th>
@@ -194,54 +208,55 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {userData.map((user) => (
-              <tr key={user.stt}>
+            {data?.data?.chitiet?.map((user, index) => (
+              <tr key={index}>
                 <td className="text-center">{user.stt}</td>
-                <td className=" p-3px">{user.ma}</td>
-                <td className=" p-3px">{user.tensanpham}</td>
-                <td className=" text-center p-3px">{user.donvi}</td>
-                <td className=" p-3px">{user.hang}</td>
-                <td className=" p-3px">{user.solohang}</td>
-                <td className=" text-center p-3px">
-                  {user.hansudung}
-                </td>
-                <td className=" text-right p-3px">{user.soluong}</td>
-                <td className=" text-right p-3px">{user.dongia}</td>
-                <td className=" text-right p-3px">{user.thanhtien}</td>
+                <td className=" p-3px">{user.sanpham_ma}</td>
+                <td className=" p-3px">{user.sanpham_ten} ({user.sanpham_hoatchat}) {user.sanpham_nongdohamluong}</td>
+                <td className=" text-center p-3px">{user.sanpham_donvitinh }</td>
+                <td className=" p-3px">{user.sanpham_hangsanxuat }</td>
+                <td className=" p-3px">{user.sanpham_solo}</td>
+                <td className=" text-center p-3px">{user.sanpham_hansudung}</td>
+                <td className=" text-right p-3px">{user.chitietxuat_soluong}</td>
+                <td className=" text-right p-3px">{user.chitietxuat_dongia }</td>
+                <td className=" text-right p-3px"></td>
                 <td className="">{user.ghichu}</td>
               </tr>
             ))}
           </tbody>
-
         </table>
         <table className="table  w-100">
-            <tbody>
-              <tr>
-                <td className=" ">Tổng số tiền:&emsp;<span className="font-bold">12.463.638,40</span></td>
-              </tr>
-              <tr>
-                <td className=" ">Tổng số tiền (viết bằng chữ):&emsp; mười hai triệu bốn trăm sáu mươi ba ngàn sáu trăm ba mươi tám phẩy bốn đồng</td>
-              </tr>
-  
-              <tr>
-                <td className=" text-right font-italic" colSpan={2}>
-                  {" "}
-                  Bạc Liêu, ngày ..7.. tháng .8.. năm 2023
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table className="table text-center w-100 mt-5px">
-            <tbody>
-              <tr>
-                <td className="font-bold w-30 ">NGƯỜI LẬP BẢNG</td>
-                <td className="font-bold w-30 text-center">PHỤ TRÁCH CTCL</td>
-                <td className="font-bold text-center">THỦ TRƯỞNG ĐƠN VỊ</td>
-              </tr>
-            </tbody>
-          </table>
+          <tbody>
+            <tr>
+              <td className=" ">
+                Tổng số tiền:&emsp;
+                <span className="font-bold">{data?.data?.tongthanhtien }</span>
+              </td>
+            </tr>
+            <tr>
+              <td className=" ">
+                Tổng số tiền (viết bằng chữ):&emsp;{data?.data?.tongthanhtien_bangchu }
+              </td>
+            </tr>
 
+            <tr>
+              <td className=" text-right font-italic" colSpan={2}>
+                {" "}
+                Bạc Liêu, <span>{data?.data?.kyten_ngayky } </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table className="table text-center w-100 mt-5px">
+          <tbody>
+            <tr>
+              <td className="font-bold w-30 ">NGƯỜI LẬP BẢNG</td>
+              <td className="font-bold w-30 text-center">PHỤ TRÁCH CTCL</td>
+              <td className="font-bold text-center">THỦ TRƯỞNG ĐƠN VỊ</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
   );

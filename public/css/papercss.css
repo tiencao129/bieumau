@@ -603,6 +603,7 @@
       position: relative;
       box-sizing: border-box;
       page-break-after: always;
+      
       color: #000;
     }
   
@@ -1319,17 +1320,17 @@
         page-break-inside: avoid;
       }
   
-      tbody {
+      /* tbody {
          page-break-inside: avoid;
-      }
+      } */
   
-      thead {
+      /* thead {
         display: table-header-group;
         margin-top: 100px;
-      }
+      } */
   
       table.report-container {
-        page-break-after: always;
+        page-break-after: always; 
       }
   
       thead.report-header {
@@ -1369,6 +1370,9 @@
       .remove-border-bold {
         border: none !important;
          /* Bỏ đường viền */
+      }
+      .pb-50px{
+        padding-bottom: 50px; 
       }
       .p-3px{
         padding: 3px;
@@ -1486,6 +1490,9 @@
       .h-200px{
         height: 200px;
       }
+      .h-290px{
+        height: 290px;
+      }
       .h-330px{
         height: 330px;
       }
@@ -1529,6 +1536,7 @@
       .d-flex{
         display: flex;
         align-items: center;
+        
       }
      .text-with-dotted {
         display: inline-block;
@@ -1541,10 +1549,28 @@
       border-collapse: collapse;
       border: none;
     }
+    .absolute{
+      position: absolute;
+    }
+    .footer1{
+      position: fixed;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      clear: both;
+      margin-top: -50px;
 
-div{page-break-inside: avoid;
+
+      
+    
+    }
+    .clear{
+      clear:both;
+    } 
+
+/* div{page-break-inside: avoid;
   page-break-after: avoid;
-}
+} */
 
 
 /* @media print {
@@ -1554,4 +1580,11 @@ div{page-break-inside: avoid;
   
 }
    */
+   .print-container {
+    page-break-after: always;
+  }
+  
+  section {
+    page-break-after: avoid; 
+  }
 

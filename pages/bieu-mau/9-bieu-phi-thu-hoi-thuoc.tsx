@@ -1,4 +1,21 @@
-const BaoCaoXuatKhoa = () => {
+import useSWR from "swr";
+import { useRouter } from "next/router";
+import React from "react";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+export default function Home() {
+  const router = useRouter();
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5000/bm_phieuthuhoithuoc_9/${router.query?.id}`,
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  console.log(data);
+
   return (
     <div className="paper A4 landscape font-size-13">
       <section className="sheet padding-5mm">
@@ -9,26 +26,24 @@ const BaoCaoXuatKhoa = () => {
                 <table className="table  w-100 ">
                   <tbody>
                     <tr className="font-bold">
-                      <td>SỞ Y TẾ BẠC LIÊU</td>
-                      <td className="text-right">Lưu: khoa Dược - VTYT</td>
+                      <td>{data?.data?.donvi_cha_ten}</td>
+                      <td className="text-right">Lưu: {data?.data?.luu}</td>
                     </tr>
                     <tr className="">
-                      <td className="font-bold">
-                        BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU
-                      </td>
-                      <td className="text-right">số:XKL0000003/202308</td>
+                      <td className="font-bold">{data?.data?.donvi_ten}</td>
+                      <td className="text-right">số: {data?.data?.so}</td>
                     </tr>
                     <tr className="">
                       <td className=" text-decoration-underline">
-                        Khoa trả: Tủ trực Dược khoa hồi sức cấp cứu
+                        Khoa trả: {data?.data?.khoatra}
                       </td>
                       <td rowSpan={2} className="text-middle text-right">
-                        In lần thứ 2
+                        In lần thứ {data?.data?.inlanthu}
                       </td>
                     </tr>
                     <tr className="">
                       <td className=" text-decoration-underline">
-                        Kho duyệt: kho lẻ Nội trú
+                        Kho duyệt:{data?.data?.khoaduyet}
                       </td>
                     </tr>
                   </tbody>
@@ -38,7 +53,7 @@ const BaoCaoXuatKhoa = () => {
                   <tbody>
                     <tr>
                       <td className="font-bold text-center">
-                        PHIẾU THU HỒI THUỐC, VẬT TƯ Y TẾ
+                        {data?.data?.tieude}
                       </td>
                     </tr>
                     <tr>
@@ -52,7 +67,7 @@ const BaoCaoXuatKhoa = () => {
                 <table className="table  w-100 mt-5">
                   <tbody>
                     <tr>
-                      <td className=" ">Lý do xuất: trả về kho lẻ nội trú</td>
+                      <td className=" ">Lý do xuất: {data?.data?.lydo_xuat}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -85,30 +100,56 @@ const BaoCaoXuatKhoa = () => {
                       <td>yêu cầu</td>
                       <td>Thực trả</td>
                     </tr>
-                    <tr>
-                      <td colSpan={7} className=" font-bold remove-border-bold">
-                        vật tư y tế
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        colSpan={7}
-                        className="align-shift-2 font-bold remove-border-bold"
-                      >
-                        vật tư y tế
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="text-center">1</td>
-                      <td className="text-center">21TPT1CON01</td>
-                      <td className="text-center">
-                        Cồn 70 độ(cồn sát khuẩn 70)
-                      </td>
-                      <td className="text-center">lít</td>
-                      <td className="text-right p-3px">2</td>
-                      <td className="text-right p-3px">2</td>
-                      <td className="text-right p-3px"></td>
-                    </tr>
+                    {data?.data?.loai?.map((loai, index) => (
+                      <React.Fragment key={index}>
+                        <tr>
+                          <td
+                            colSpan={7}
+                            className=" font-bold remove-border-bold"
+                          >
+                            vật tư y tế
+                          </td>
+                        </tr>
+                        {loai.nhom?.map((nhom, nhomIndex) => (
+                          <React.Fragment key={nhomIndex}>
+                            <tr>
+                              <td
+                                colSpan={7}
+                                className="align-shift-2 font-bold remove-border-bold"
+                              >
+                                vật tư y tế
+                              </td>
+                            </tr>
+
+                            {nhom.chittiet?.map((chitiet, chitietIndex) => (
+                              <tr key={chitietIndex}>
+                                <td className="text-center">{chitiet.stt}</td>
+                                <td className="text-center">
+                                  {chitiet.sanpham_ma}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.sanpham_ten}(
+                                  {chitiet.sanpham_hoatchat}){" "}
+                                  {chitiet.sanpham_nongdohamluong}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.sanpham_donvitinh}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.chitietxuat_soluong_yeucau}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.chitietxuat_soluong_thuctra}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.ghichu}
+                                </td>
+                              </tr>
+                            ))}
+                          </React.Fragment>
+                        ))}
+                      </React.Fragment>
+                    ))}
                   </tbody>
                   <tfoot>
                     <tr>
@@ -119,25 +160,27 @@ const BaoCaoXuatKhoa = () => {
                         className="font-bold text-right remove-border-bold"
                         colSpan={2}
                       >
-                        Ngày,giờ duyệt: 19h58, 31/07/2023
+                        Ngày,giờ duyệt: {data?.data?.thongtin_duyet_ngaygio}
                       </td>
                       <td
                         className="font-bold text-right remove-border-bold"
                         colSpan={3}
                       >
-                        Ngày in: 19h58, 31/07/2023
+                        Ngày in: {data?.data?.thongtin_in_ngaygio}
                       </td>
                     </tr>
                   </tfoot>
                 </table>
 
-               
                 <table className="table text-center font-bold  w-100 mt-10 ">
                   <tbody>
                     <tr>
                       <td className="  ">
                         Trưởng khoa dược - VTYT <br />
-                        <span className="font-italic" style={{ fontWeight: "normal" }}>
+                        <span
+                          className="font-italic"
+                          style={{ fontWeight: "normal" }}
+                        >
                           (Hoặc người được uỷ quyền)
                         </span>
                       </td>
@@ -147,8 +190,11 @@ const BaoCaoXuatKhoa = () => {
                         Trưởng khoa lâm sàng/
                         <br />
                         Cận lâm sàng <br />
-                        <span className="font-italic" style={{ fontWeight: "normal" }}>
-                         ( Hoặc người được uỷ quyền)
+                        <span
+                          className="font-italic"
+                          style={{ fontWeight: "normal" }}
+                        >
+                          ( Hoặc người được uỷ quyền)
                         </span>
                       </td>
                     </tr>
@@ -160,26 +206,24 @@ const BaoCaoXuatKhoa = () => {
                 <table className="table  w-100 ">
                   <tbody>
                     <tr className="font-bold">
-                      <td>SỞ Y TẾ BẠC LIÊU</td>
-                      <td className="text-right">Lưu: khoa Dược - VTYT</td>
+                      <td>{data?.data?.donvi_cha_ten}</td>
+                      <td className="text-right">Lưu: {data?.data?.luu}</td>
                     </tr>
                     <tr className="">
-                      <td className="font-bold">
-                        BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU
-                      </td>
-                      <td className="text-right">số:XKL0000003/202308</td>
+                      <td className="font-bold">{data?.data?.donvi_ten}</td>
+                      <td className="text-right">số: {data?.data?.so}</td>
                     </tr>
                     <tr className="">
                       <td className=" text-decoration-underline">
-                        Khoa trả: Tủ trực Dược khoa hồi sức cấp cứu
+                        Khoa trả: {data?.data?.khoatra}
                       </td>
                       <td rowSpan={2} className="text-middle text-right">
-                        In lần thứ 2
+                        In lần thứ {data?.data?.inlanthu}
                       </td>
                     </tr>
                     <tr className="">
                       <td className=" text-decoration-underline">
-                        Kho duyệt: kho lẻ Nội trú
+                        Kho duyệt:{data?.data?.khoaduyet}
                       </td>
                     </tr>
                   </tbody>
@@ -189,7 +233,7 @@ const BaoCaoXuatKhoa = () => {
                   <tbody>
                     <tr>
                       <td className="font-bold text-center">
-                        PHIẾU THU HỒI THUỐC, VẬT TƯ Y TẾ
+                        {data?.data?.tieude}
                       </td>
                     </tr>
                     <tr>
@@ -203,7 +247,7 @@ const BaoCaoXuatKhoa = () => {
                 <table className="table  w-100 mt-5">
                   <tbody>
                     <tr>
-                      <td className=" ">Lý do xuất: trả về kho lẻ nội trú</td>
+                      <td className=" ">Lý do xuất: {data?.data?.lydo_xuat}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -236,30 +280,56 @@ const BaoCaoXuatKhoa = () => {
                       <td>yêu cầu</td>
                       <td>Thực trả</td>
                     </tr>
-                    <tr>
-                      <td colSpan={7} className=" font-bold remove-border-bold">
-                        vật tư y tế
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        colSpan={7}
-                        className="align-shift-2 font-bold remove-border-bold"
-                      >
-                        vật tư y tế
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="text-center">1</td>
-                      <td className="text-center">21TPT1CON01</td>
-                      <td className="text-center">
-                        Cồn 70 độ(cồn sát khuẩn 70)
-                      </td>
-                      <td className="text-center">lít</td>
-                      <td className="text-right p-3px">2</td>
-                      <td className="text-right p-3px">2</td>
-                      <td className="text-right p-3px"></td>
-                    </tr>
+                    {data?.data?.loai?.map((loai, index) => (
+                      <React.Fragment key={index}>
+                        <tr>
+                          <td
+                            colSpan={7}
+                            className=" font-bold remove-border-bold"
+                          >
+                            vật tư y tế
+                          </td>
+                        </tr>
+                        {loai.nhom?.map((nhom, nhomIndex) => (
+                          <React.Fragment key={nhomIndex}>
+                            <tr>
+                              <td
+                                colSpan={7}
+                                className="align-shift-2 font-bold remove-border-bold"
+                              >
+                                vật tư y tế
+                              </td>
+                            </tr>
+
+                            {nhom.chittiet?.map((chitiet, chitietIndex) => (
+                              <tr key={chitietIndex}>
+                                <td className="text-center">{chitiet.stt}</td>
+                                <td className="text-center">
+                                  {chitiet.sanpham_ma}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.sanpham_ten}(
+                                  {chitiet.sanpham_hoatchat}){" "}
+                                  {chitiet.sanpham_nongdohamluong}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.sanpham_donvitinh}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.chitietxuat_soluong_yeucau}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.chitietxuat_soluong_thuctra}
+                                </td>
+                                <td className="text-center">
+                                  {chitiet.ghichu}
+                                </td>
+                              </tr>
+                            ))}
+                          </React.Fragment>
+                        ))}
+                      </React.Fragment>
+                    ))}
                   </tbody>
                   <tfoot>
                     <tr>
@@ -270,25 +340,27 @@ const BaoCaoXuatKhoa = () => {
                         className="font-bold text-right remove-border-bold"
                         colSpan={2}
                       >
-                        Ngày,giờ duyệt: 19h58, 31/07/2023
+                        Ngày,giờ duyệt: {data?.data?.thongtin_duyet_ngaygio}
                       </td>
                       <td
                         className="font-bold text-right remove-border-bold"
                         colSpan={3}
                       >
-                        Ngày in: 19h58, 31/07/2023
+                        Ngày in: {data?.data?.thongtin_in_ngaygio}
                       </td>
                     </tr>
                   </tfoot>
                 </table>
 
-               
                 <table className="table text-center font-bold  w-100 mt-10 ">
                   <tbody>
                     <tr>
                       <td className="  ">
                         Trưởng khoa dược - VTYT <br />
-                        <span className="font-italic" style={{ fontWeight: "normal" }}>
+                        <span
+                          className="font-italic"
+                          style={{ fontWeight: "normal" }}
+                        >
                           (Hoặc người được uỷ quyền)
                         </span>
                       </td>
@@ -298,8 +370,11 @@ const BaoCaoXuatKhoa = () => {
                         Trưởng khoa lâm sàng/
                         <br />
                         Cận lâm sàng <br />
-                        <span className="font-italic" style={{ fontWeight: "normal" }}>
-                         ( Hoặc người được uỷ quyền)
+                        <span
+                          className="font-italic"
+                          style={{ fontWeight: "normal" }}
+                        >
+                          ( Hoặc người được uỷ quyền)
                         </span>
                       </td>
                     </tr>
@@ -312,6 +387,4 @@ const BaoCaoXuatKhoa = () => {
       </section>
     </div>
   );
-};
-
-export default BaoCaoXuatKhoa;
+}

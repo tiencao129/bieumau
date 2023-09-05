@@ -1,19 +1,50 @@
-const BaoCaoXuatKhoa = () => {
+import useSWR from "swr";
+import { useRouter } from "next/router";
+import React from "react";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+const calculateTotal = (data) => {
+  let total = 0;
+  if (data?.data?.chitiet) {
+ 
+        data.data.chitiet.forEach((chitiet) => {
+          chitiet.chitiet_thanhtien =
+            chitiet.chitietxuat_soluong * chitiet.chitietxuat_dongia;
+            total += chitiet.chitiet_thanhtien;
+        });
+   
+    data.data.cong = total;
+  }
+};
+
+export default function Home() {
+  const router = useRouter();
+  const { data, error, isLoading } = useSWR(
+    `http://localhost:5000/bm_phieunhapkho_18/${router.query?.id}`,
+    fetcher
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  calculateTotal(data);
+
     return (
       <div className="paper A4 font-size-13">
         <section className="sheet padding-10mm">
           <table className="table w-100  ">
             <tbody>
               <tr className="">
-                <td className="w-70 font-bold">SỞ Y TẾ BẠC LIÊU</td>
+                <td className="w-70 font-bold">{data?.data?.donvi_cha_ten}</td>
               </tr>
               <tr className="">
-                <td className="font-bold">BỆNH VIÊN LAO VÀ BỆNH PHỔI BẠC LIÊU</td>
-                <td className="">Số:XHT0000000001/202308</td>
+                <td className="font-bold">{data?.data?.donvi_ten}</td>
+                <td className="">Số:{data?.data?.so}</td>
               </tr>
               <tr className="">
                 <td className=""></td>
-                <td className="font-bold">Nhập tại Kho chẵn VTYT - Hoá chất</td>
+                <td className="font-bold">Nhập tại: {data?.data?.nhaptai}</td>
                 
 
               </tr>
@@ -24,11 +55,11 @@ const BaoCaoXuatKhoa = () => {
             <tbody>
               <tr>
                 <td className="font-bold text-center font-size-17 mt-5px">
-                  PHIẾU NHẬP KHO
+                {data?.data?.tieude}
                 </td>
               </tr>
               <tr>
-                <td className=" text-center"> Ngày 4 Tháng 7 năm 2023</td>
+                <td className=" text-center">  {data?.data?.ngay_lap}</td>
               </tr>
             </tbody>
           </table>
@@ -36,15 +67,15 @@ const BaoCaoXuatKhoa = () => {
           <table className="table  w-100 mt-5px font-bold">
             <tbody>
               <tr>
-                <td className=" ">Số chứng từ</td>
+                <td className=" ">Số chừng từ: {data?.data?.sochungtu}</td>
                
               </tr>
               <tr>
-                <td className="  "> Nơi cung cấp: CÔNG TY THIÉT BỊ Y TẾ THANH PHƯỚC</td>
+                <td className="  "> Nhà cung cấp:  {data?.data?.nhacungcap}</td>
               </tr>
               <tr>
                 <td className="" colSpan={2}>
-                  Lý do nhập: nhập hoá chất
+                  Lý do nhập: {data?.data?.lydo_nhap}
                 </td>
               </tr>
             </tbody>
@@ -80,27 +111,29 @@ const BaoCaoXuatKhoa = () => {
                   Ghi chú
                 </td>
               </tr>
-
-              <tr>
-                <td className="text-center text-middle">1</td>
-                <td className="text-center text-middle">21TPT1CON01</td>
-                <td className="text-center text-middle">Eprazinon 50mg</td>
-                <td className="text-center text-middle">viên</td>
+              {data?.data?.chitiet?.map((chitiet, chitietIndex) => (
+              <tr key={chitietIndex}>
+                <td className="text-center text-middle"> {chitiet.stt} </td>
+                <td className="text-center text-middle">{chitiet.sanpham_ma}</td>
+                <td className="text-center text-middle">{chitiet.sanpham_ten}{chitiet.sanpham_hoatchat}{chitiet.sanpham_nongdohamluong}  </td>
+                <td className="text-center text-middle">{chitiet.sanpham_donvitinh}</td>
                 <td className="text-center text-middle">
-                  Công ty Cổ Phần Hoá - Dược Phẩm Việt Nam
+                {chitiet.sanpham_hangsanxuat}
                 </td>
-                <td className="text-right p-3px text-middle">23003HN</td>
-                <td className="text-right p-3px text-middle">05/05/2026</td>
-                <td className="text-right p-3px text-middle">66</td>
-                <td className="text-right p-3px text-middle ">400</td>
-                <td className="text-right p-3px text-middle">26.400</td>
+                <td className="text-right p-3px text-middle">{chitiet.sanpham_solo}</td>
+                <td className="text-right p-3px text-middle">{chitiet.sanpham_hansudung}</td>
+                <td className="text-right p-3px text-middle">{chitiet.chitietxuat_soluong}</td>
+                <td className="text-right p-3px text-middle ">{chitiet.chitietxuat_dongia}</td>
+                <td className="text-right p-3px text-middle">{chitiet.chitiet_thanhtien}</td>
+                <td className="text-right p-3px text-middle">{chitiet.ghichu}</td>
+
               </tr>
-              
+              ))}
             </tbody>
             <tfoot>
                 <tr>
                     <td colSpan={9} className="text-right p-3px font-bold">Cộng:</td>
-                    <td colSpan={2} className="text-right p-3px">26.400</td>
+                    <td colSpan={2} className="text-right p-3px">{data?.data?.cong}</td>
                 </tr>
             </tfoot>
           </table>
@@ -108,7 +141,7 @@ const BaoCaoXuatKhoa = () => {
             <tbody>
             
               <tr className="">
-                <td className=" ">Tổng số tiền (viết bằng chữ):&emsp; Hai mươi sáu triệu bảy trăm chín mươi bốn ngàn không trăm chín mươi bốn phẩy một đồng</td>
+                <td className=" ">Tổng số tiền (viết bằng chữ):&emsp; {data?.data?.tongsotien_bangchu}</td>
               </tr>
   
 
@@ -120,7 +153,7 @@ const BaoCaoXuatKhoa = () => {
                 <tr>
                     <td> NGƯỜI GIAO </td>
                     <td>THỦ KHO</td>
-                    <td>Bạc liêu, ngày 4 tháng 7 năm 2023</td>
+                    <td>{data?.data?.kyten_noiky}, {data?.data?.kyten_ngayky}</td>
                 </tr>
               <tr className="h-150px font-size-14">
                 <td className=" w-30  ">NGƯỜI LẬP BẢNG</td>
@@ -141,5 +174,4 @@ const BaoCaoXuatKhoa = () => {
     );
   };
   
-  export default BaoCaoXuatKhoa;
   

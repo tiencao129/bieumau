@@ -1,0 +1,1932 @@
+{
+  "bm_xuatvientro_15": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU aaaaaa",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "tieude": "biểu mẫu phiếu xuất viện trợ",
+        "so_phieu": "XHT0000000001/202308",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "noi_nhan": "TTYT Huyện Vĩnh Lợi",
+        "kho_xuat": "Kho thuốc chương trình Lao",
+        "ly_do": "Xuất theo phân bổ được duyệt",
+        "tongthanhtien": 12463638.4,
+        "tongthanhtien_bangchu": " mười hai triệu bốn trăm sáu mươi ba ngàn sáu trăm ba mươi tám phẩy bốn đồng",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoilapbang": "",
+        "kyten_phutrachctcl": "",
+        "kyten_thutruongdonvi": "",
+        "chitiet": [
+          {
+            "stt": 1,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 70 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 70",
+            "sanpham_nongdohamluong": "70mg",
+            "sanpham_donvitinh": "lit",
+            "sanpham_hangsanxuat": "Công Ty ABC",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitietxuat_ghichu": ""
+          },
+          {
+            "stt": 2,
+            "sanpham_ma": "22FPT1CON01",
+            "sanpham_ten": "Cồn 90 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lit",
+            "sanpham_hangsanxuat": "Công Ty 12",
+            "sanpham_solo": "545656",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitietxuat_ghichu": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU ",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "tieude": "biểu mẫu phiếu xuất viện trợ",
+        "so_phieu": "XHT0000000001/202308",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "noi_nhan": "TTYT Huyện Vĩnh Lợi",
+        "kho_xuat": "Kho thuốc chương trình Lao",
+        "ly_do": "Xuất theo phân bổ được duyệt",
+        "tongthanhtien": 12463638.4,
+        "tongthanhtien_bangchu": " mười hai triệu bốn trăm sáu mươi ba ngàn sáu trăm ba mươi tám phẩy bốn đồng",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoilapbang": "",
+        "kyten_phutrachctcl": "",
+        "kyten_thutruongdonvi": "",
+        "chitiet": [
+          {
+            "stt": 1,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 70 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 70",
+            "sanpham_nongdohamluong": "70mg",
+            "sanpham_donvitinh": "lit",
+            "sanpham_hangsanxuat": "Công Ty ABC",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitietxuat_ghichu": ""
+          },
+          {
+            "stt": 2,
+            "sanpham_ma": "22FPT1CON01",
+            "sanpham_ten": "Cồn 90 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lit",
+            "sanpham_hangsanxuat": "Công Ty 12",
+            "sanpham_solo": "545656",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitietxuat_ghichu": ""
+          }
+        ]
+      }
+    }
+  ],
+  "bm_baocaoxuatkhoa_1": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "donvi_khoa": "KHOA DƯỢC - VTYT",
+        "tieude": "BÁO CÁO XUẤT KHOA",
+        "ngaylap": "2023-07-03 10:12:30",
+        "kho_khoa_duoc": "",
+        "xuat_qua_kho_le": "",
+        "hinh_thuc_du_tru": "BHYT",
+        "tongthanhtien": 0,
+        "tongkhoan": 1,
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_truongkhoaduoc": "",
+        "kyten_thukho": "",
+        "kyten_thongkeduoc": "",
+
+        "kyten_nguoinhan": "",
+        "loai": [
+          {
+            "tenloai": "Hoá chất",
+            "loai_thanhtien": 0,
+            "nhom": [
+              {
+                "tennhom": "Hoá chát 1",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 2,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON012",
+                    "sanpham_ten": "Cồn 90 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 3,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  }
+                ]
+              },
+              {
+                "tennhom": "Hoá chát 12",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 760 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 2,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON012",
+                    "sanpham_ten": "Cồn 770 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 13,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tenloai": "Hoá chất 12",
+            "loai_thanhtien": 0,
+            "nhom": [
+              {
+                "tennhom": "Hoá chát 1",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 5,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON012",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 3,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  }
+                ]
+              },
+              {
+                "tennhom": "Hoá chát 12",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 2,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON012",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "chitietxuat_soluong": 13,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_baocaonhapkhochan_3": [
+    {
+      "id": 1,
+      "data": {
+        "tieude": "BÁO CÁO XUẤT KHOA",
+        "ngaylap": "2023-07-03 10:12:30",
+        "tongthanhtien": 0,
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_truongkhoaduoc": "",
+        "kyten_nguoilap": "",
+        "chittiet": [
+          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          }
+
+        
+        ]
+      }
+    }
+  ],
+  "bm_phieuchidinh_4": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "donvi_khoa": "KHOA DƯỢC - VTYT",
+        "mabn": "23070000002",
+        "donvi_dienthoai": "021232323",
+        "tieude": "PHIẾU CHỈ ĐỊNH",
+
+        "benhnhan_hoten": "Đặng Văn Bảo 213",
+        "benhnhan_ngaysinh": "18/2/2021",
+        "benhnhan_gioitinh": "Nam",
+        "giayto_so": "GD4959521018823",
+        "giayto_noidangky": "95-005",
+        "benhnhan_diachi": "Ấp Tà Suôi, Xã Lộc Ninh, Huyện Hồng Dân, Bạc Liêu",
+        "khoa": "Khoa Khám Bệnh (Phòng khám lao)",
+        "chuandoan": "Lao da và mô dưới da",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_bacsy": " BS Lê Thanh Phương",
+        "tongcong": 0,
+        "diengiai": [
+          {
+            "kham_stt": 1,
+            "kham_ten": "Khám lao(1 lần)",
+            "kham_soluong": 2,
+            "kham_dongia": 34000,
+            "diengiai_thanhtien": 0
+          },
+          {
+            "kham_stt": 2,
+            "kham_ten": "Khám tổng quát(1 lần)",
+            "kham_soluong": 2,
+            "kham_dongia": 90000,
+            "diengiai_thanhtien": 0
+          }
+        ]
+      }
+    }
+  ],
+  "bm_donthuoc_5": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "donvi_khoa": "KHOA DƯỢC - VTYT",
+        "benhnhan_ma": "23070000002",
+        "donvi_dienthoai": "021232323",
+        "tieude": "ĐƠN THUỐC",
+
+        "benhnhan_hoten": "Đặng Văn Bảo 2",
+        "benhnhan_ngaysinh": "18/2/2001",
+        "benhnhan_gioitinh": "Nam",
+        "giayto_so": "GD4959521018823",
+        "giayto_noidangky": "95-005",
+        "benhnhan_diachi": "Ấp Tà Suôi, Xã Lộc Ninh, Huyện Hồng Dân, Bạc Liêu",
+        "khoa": "Khoa Khám Bệnh (Phòng khám Nội 2)",
+        "chuandoan": "Viêm phế quản phổi, không xác định/ thiếu calci do chế độ ăn/ bệnh trào ngược dạ dày-thực quản ",
+        "mabenh": "J18.0/E58/k21",
+
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_bacsydieutri": " BS Lê Thanh Phương",
+        "congkhoan": 7,
+        "loidan": "",
+        "toa_ngayuong": 7,
+        "taikhamngaykhi": "",
+        "taikham_ngay": "2023-08-07 10:30:37",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+        "chidinh_tieude": "CHỈ ĐỊNH DÙNG TUỐC",
+        "chidinh": [
+          {
+            "thuoc_stt": 1,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 2,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 2,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 3,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 5,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 4,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 7,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 5,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 100,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 6,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 7,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 7,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 7,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 1,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 2,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 2,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 3,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 5,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 4,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 7,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 5,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 100,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 6,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 7,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 7,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          },
+          {
+            "thuoc_stt": 7,
+            "thuoc_ten": " Amoxicilin + acid clavulanic 500mg + 125mg  ",
+            "thuoc_hoatchat": "(Augbidil 625)",
+            "thuoc_nongdohamluong": "500mg + 125mg",
+            "thuoc_cachdung": "sáng 1 viên, chiều 1 viên, tối 1 viên (uống)",
+            "thuoc_soluong": 21,
+            "thuoc_donvitinh": "viên"
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieuchidinh_7": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "donvi_khoa": "KHOA DƯỢC - VTYT",
+        "mabn": "23070000002",
+        "donvi_dienthoai": "021232323",
+        "tieude": "PHIẾU CHỈ ĐỊNH",
+
+        "benhnhan_hoten": "Đặng Văn Bảo 213",
+        "benhnhan_ngaysinh": "18/2/2021",
+        "benhnhan_gioitinh": "Nam",
+        "giayto_so": "GD4959521018823",
+        "giayto_noidangky": "95-005",
+        "benhnhan_diachi": "Ấp Tà Suôi, Xã Lộc Ninh, Huyện Hồng Dân, Bạc Liêu",
+        "khoa": "Khoa Khám Bệnh (Phòng khám lao)",
+        "chuandoan": "Lao da và mô dưới da",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_bacsy": " BS Lê Thanh Phương",
+        "tongcong": 0,
+        "diengiai": [
+          {
+            "kham_stt": 1,
+            "kham_ten": "Khám lao(1 lần)",
+            "kham_soluong": 2,
+            "kham_dongia": 34000,
+            "diengiai_thanhtien": 0
+          },
+          {
+            "kham_stt": 2,
+            "kham_ten": "Khám tổng quát(1 lần)",
+            "kham_soluong": 2,
+            "kham_dongia": 90000,
+            "diengiai_thanhtien": 0
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieuchidinh_noitru_7": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "donvi_khoa": "KHOA KHÁM BỆNH",
+        "donvi_makhoa": "k01",
+        "donvi_mauso": "01/KBCB",
+        "manguoikhambenh": "23070000002",
+        "sokhambenh": "118369",
+        "sothutuphieu": "3",
+        "tieude": "BẢNG KÊ CHI PHÍ ĐIỀU TRỊ NỘI TRÚ",
+
+        "benhnhan_hoten": "Đặng Văn Bảo 213",
+        "benhnhan_ngaysinh": "18/2/2021",
+        "benhnhan_gioitinh": "Nam",
+        "benhnhan_diachi": "Ấp Tà Suôi, Xã Lộc Ninh, Huyện Hồng Dân, Bạc Liêu",
+        "benhnhan_diachi_makhuvuc": "k1",
+        "giayto_so": "GD4959521018823",
+        "giayto_ma": "95-005",
+        "giayto_giatritu": "2023-1-1 00:00:00",
+        "giayto_giatriden": "2023-12-31 23:59:59",
+        "giayto_noidangkykcbbandau": "TYT xã vĩnh Mỹ B",
+        "ngaygio_denkham": "2023-8-7 7:23:50",
+        "ngaygio_dieutrinoitrutu": "2023-8-7 7:23:50",
+        "ngaygio_ketthucdieutri": "2023-8-7 10:23:50",
+        "tongsongay_dieutri": "1",
+        "tinhtrang_ravien": "",
+        "capcuu": "",
+        "dungtuyen": "X",
+        "noichuyendentu": "",
+        "noichuyendi": "",
+        "thongtuyen": "X",
+        "traituyen": "",
+        "chuandoanxacdinh": "",
+        "mabenh": "",
+        "benhkemtheo": "",
+        "mabenhkemtheo": "",
+        "thoidiemdu5nam_tungay": "",
+        "miencungchitratrongnamtungay": "",
+        "muchuong": "100",
+        "chiphiKBCB_tinhtungay": "2023-8-7 7:23:50",
+        "chiphiKBCB_tinhdenngay": "2023-8-7 7:23:50",
+        "tongchiphi": 87000,
+        "tongchiphi_vietbangchu": "tám mươi bảy nghìn đồng",
+        "sotienthanhtoan_quybhyt": 87000,
+        "sotienthanhtoan_nguoibenhtra_phamvibhyt": 0,
+        "sotienthanhtoan_nguoibenhtra_cackhoanphaitrakhac": 0,
+        "tam_ung": 1000000,
+        "sotienthanhtoan_nguoibenhcanthanhtoan": "0",
+        "sotienthanhtoan_benhvienhoantra": 1000000,
+
+        "thongtin_in_benhnhan": "DANG VAN BAO",
+        "thongtin_in_ngayin": "2023-8-7 7:23:50",
+
+        "khoa": "Khoa Khám Bệnh (Phòng khám lao)",
+        "chuandoan": "Lao da và mô dưới da",
+        "tongcong_thanhtienbv": 87000,
+        "tongcong_thanhtienbh": 87000,
+        "tongcong_quybhyt": 87000,
+        "tongcong_nguoibenhcungtritra": 0,
+        "tongcong_khac": 0,
+        "tongcong_nguoibenhtutra": 0,
+
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_nguoilapbangke": "2023-8-7 10:23:50",
+        "kyten_ketoanvienphi": " ",
+        "kyten_xacnhancuanguoibenh": " ",
+        "kyten_giamdinhbhyt": " ",
+
+        "loai": [
+          {
+            "tenloai": "Chuẩn đoán hình ảnh",
+            "loai_thanhtienbv": 87800.0,
+            "loai_thanhtienbh": 87800.0,
+            "loai_quybhyt": 87800.0,
+            "loai_nguoibenhcungchitra": 0,
+            "loai_khac": 0,
+            "loai_nguoibenhtutra": 0,
+
+            "chitiet_khambenh": [
+              {
+                "noidung": "siêu âm tuyến giáp",
+                "donvitinh": "Khám lao(1 lần)",
+                "soluong": 2,
+                "dongiabv": 43900,
+                "dongiabh": 43900,
+                "tylethanhtoantheodichvu": "100",
+                "thanhtienbv": 43900.0,
+                "tylethanhtoanbhyt": "100",
+                "thanhtienbh": 43900,
+                "quybhyt": 43900,
+                "nguoibenhcungchitra": 0,
+                "khac": 0,
+                "nguoibenhtutra": 0
+              },
+              {
+                "noidung": "siêu âm tuyến giáp",
+                "donvitinh": "Khám lao(1 lần)",
+                "soluong": 2,
+                "dongiabv": 43900,
+                "dongiabh": 43900,
+                "tylethanhtoantheodichvu": "100",
+                "thanhtienbv": 43900.0,
+                "tylethanhtoanbhyt": "100",
+                "thanhtienbh": 43900,
+                "quybhyt": 43900,
+                "nguoibenhcungchitra": 0,
+                "khac": 0,
+                "nguoibenhtutra": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_thutienvienphi_8": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "quochieu": "CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+        "tieungu": "Độc lập - Tự do - Hạnh phúc",
+        "so": "23070000002",
+        "kyhieu": "K22TYY",
+        "mauso": "",
+
+        "tieude": "BIÊN LAI THU TIỀN VIỆN PHÍ",
+        "ngay_lap": "2023-7-4 10:27:30",
+
+        "nguoinoptien_hoten": "Đặng Văn Bảo ",
+
+        "nguoinoptien_diachi": "Ấp Tà Suôi, Xã Lộc Ninh, Huyện Hồng Dân, Bạc Liêu",
+        "sotiennop": "",
+        "vietbangchu": "",
+        "lydonop": "xét nghiệm, chuẩn đoán hình ảnh: 136000 đồng",
+        "kyten_nguoinoptien": "",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoithutien": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System"
+      }
+    }
+  ],
+  "bm_phieuthuhoithuoc_9": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "khoatra": "Tủ trực Dược khoa Hồi sức Cấp cứu ",
+        "khoaduyet": "Kho lẻ Nội trú",
+        "luu": "Khoa Dược - VTYT",
+        "so": "XHT0000000001/202308",
+        "inlanthu": "2",
+        "tieude": "PHIẾU THU HỒI, VẬT TƯ Y TẾ",
+        "ngay_lap": "2023-7-31 10:27:30",
+
+        "lydo_xuat": " trả về kho lẻ nội trú",
+
+        "kyten_nguoigiao": "",
+
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "kyten_truongkhoalamsang_canlamsang": " ",
+
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_duyet_ngaygio": "2023-08-07 10:30:37",
+
+        "loai": [
+          {
+            "tenloai": "Vật tư y tế",
+
+            "nhom": [
+              {
+                "tennhom": "Vật tư y tế",
+
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieuchuyenkho_10": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 123",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "so": "XHT0000000001/202308",
+        "tieude": "PHIẾU CHUYỂN KHO",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "sochungtu": " ",
+        "noinhan": "Kho lẻ Nội trú",
+        "lydo_xuat": "",
+        "kho_xuat": "Tủ trực Khoa Dược",
+        "loai_sanpham": "",
+        "tongsotien": 0,
+        "tongsotien_bangchu": "một triệu năm trăm hai mươi mốt ngàn đồng",
+        "kyten_nguoigiao": "",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+        "loai": [
+          {
+            "tenloai": "Thuốc ống",
+            "loai_thanhtien": 0,
+            "nhom": [
+              {
+                "tennhom": "Kháng sinh",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "sanpham_solo": "123456a",
+                    "sanpham_hansudung": "2023-12-23 10:23:30",
+
+                    "chitietxuat_soluong": 2,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0,
+                    "ghichu": ""
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 90 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 90",
+                    "sanpham_nongdohamluong": "90mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 2",
+                    "sanpham_solo": "123456a",
+                    "sanpham_hansudung": "2023-12-23 10:23:30",
+
+                    "chitietxuat_soluong": 3,
+                    "chitietxuat_dongia": 7000,
+                    "chitiet_thanhtien": 0,
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieutrakho_11": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "so": "XHT0000000001/202308",
+        "tieude": "PHIẾU TRẢ KHO",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "sochungtu": " ",
+        "noinhan": "Kho chẵn thuốc",
+        "lydo_xuat": "",
+        "kho_xuat": "Kho lẻ Ngoại trú",
+        "loai_sanpham": "",
+        "tongsotien": 0,
+        "tongsotien_bangchu": "một triệu năm trăm hai mươi mốt ngàn đồng",
+        "kyten_nguoigiao": "",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+        "loai": [
+          {
+            "tenloai": "Thuốc ống",
+            "loai_thanhtien": 0,
+            "nhom": [
+              {
+                "tennhom": "Kháng sinh",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "sanpham_solo": "123456a",
+                    "sanpham_hansudung": "2023-12-23 10:23:30",
+
+                    "chitietxuat_soluong": 2,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0,
+                    "ghichu": ""
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 901 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 90",
+                    "sanpham_nongdohamluong": "90mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 2",
+                    "sanpham_solo": "123456a",
+                    "sanpham_hansudung": "2023-12-23 10:23:30",
+
+                    "chitietxuat_soluong": 5,
+                    "chitietxuat_dongia": 7000,
+                    "chitiet_thanhtien": 0,
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieulinhbututruc_12": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "khoalinh": "Tủ trực Dược khoa Hồi sức Cấp cứu ",
+        "khoaduyet": "Kho lẻ Nội trú",
+        "luu": "Khoa Dược - VTYT",
+        "so": "XHT0000000001/202308",
+        "inlanthu": "4",
+        "tieude": "PHIẾU LĨNH BÙ TỦ TRỰC",
+        "ngay_lap": "2023-7-31 10:27:30",
+
+        "lydo_xuat": " ",
+
+        "kyten_nguoigiao": "",
+
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "kyten_truongkhoalamsang_canlamsang": " ",
+
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_duyet_ngaygio": "2023-08-07 10:30:37",
+
+        "loai": [
+          {
+            "tenloai": "Vật tư y tế",
+
+            "nhom": [
+              {
+                "tennhom": "Vật tư y tế",
+
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 90 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 90",
+                    "sanpham_nongdohamluong": "90mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieubosungtutruc_13": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "khoalinh": "Tủ trực Dược khoa Hồi sức Cấp cứu ",
+        "khoaduyet": "Kho lẻ Nội trú",
+        "luu": "Khoa Dược - VTYT",
+        "so": "XHT0000000001/202308",
+        "inlanthu": "4",
+        "tieude": "PHIẾU BỔ SUNG TỦ TRỰC",
+        "ngay_lap": "2023-7-31 10:27:30",
+
+        "lydo_xuat": "Bổ sung hộp chống sốc CDHA-TDCN VTYT(1 hộp)",
+
+        "kyten_nguoigiao": "",
+
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "kyten_truongkhoalamsang_canlamsang": " ",
+
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_duyet_ngaygio": "2023-08-07 10:30:37",
+
+        "loai": [
+          {
+            "tenloai": "Vật tư y tế",
+
+            "nhom": [
+              {
+                "tennhom": "Vật tư y tế",
+
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 90 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 90",
+                    "sanpham_nongdohamluong": "90mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tenloai": "Vật tư Y Tế tiêu hao",
+
+            "nhom": [
+              {
+                "tennhom": "Vật tư Y Tế tiêu hao",
+
+                "chittiet": [
+                  {
+                    "stt": 3,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 100 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  },
+                  {
+                    "stt": 4,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 120 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 90",
+                    "sanpham_nongdohamluong": "90mg",
+                    "sanpham_donvitinh": "lít",
+
+                    "chitietxuat_soluong_yeucau": 2,
+                    "chitietxuat_soluong_thuctra": 2,
+
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieuxuatchokhoaphong_14": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "khokhoa": "Kho Khoa Nội ",
+
+        "luu": "Khoa Dược - VTYT",
+        "so": "XHT0000000001/202308",
+        "inlanthu": "4",
+        "tieude": "PHIẾU LĨNH HAO PHÍ HOÁ CHẤT VẬT TƯ Y TẾ TIÊU HAO",
+        "ngay_lap": "2023-7-31 10:27:30",
+
+        "kyten_nguoigiao": "",
+
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "kyten_truongkhoalamsang_canlamsang": " ",
+
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_duyet_ngaygio": "2023-08-07 10:30:37",
+
+        "chittiet": [
+          {
+            "stt": 3,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 100 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 70",
+            "sanpham_nongdohamluong": "70mg",
+            "sanpham_donvitinh": "lít",
+
+            "chitietxuat_soluong_yeucau": 2,
+            "chitietxuat_soluong_thuctra": 2,
+
+            "ghichu": ""
+          },
+          {
+            "stt": 4,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 120 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+
+            "chitietxuat_soluong_yeucau": 2,
+            "chitietxuat_soluong_thuctra": 2,
+
+            "ghichu": ""
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieuxuatkho_16": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "so": "XHT0000000001/202308",
+        "tieude": "PHIẾU XUẤT KHO",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "sochungtu": " ",
+        "noinhan": "Domesco",
+        "lydo_xuat": "xuất khác",
+        "kho_xuat": "Kho lẻ Nội trú",
+        "loai_sanpham": "",
+        "tongsotien": 0,
+        "tongsotien_bangchu": "một triệu năm trăm hai mươi mốt ngàn đồng",
+        "kyten_nguoigiao": "",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+        "loai": [
+          {
+            "tenloai": "Thuốc ống",
+            "loai_thanhtien": 0,
+            "nhom": [
+              {
+                "tennhom": "Kháng sinh",
+                "nhom_thanhtien": 0,
+                "chittiet": [
+                  {
+                    "stt": 1,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 70 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 70",
+                    "sanpham_nongdohamluong": "70mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 12",
+                    "sanpham_solo": "123456a",
+                    "sanpham_hansudung": "2023-12-23 10:23:30",
+
+                    "chitietxuat_soluong": 2,
+                    "chitietxuat_dongia": 750000,
+                    "chitiet_thanhtien": 0,
+                    "ghichu": ""
+                  },
+                  {
+                    "stt": 2,
+                    "sanpham_ma": "21TPT1CON01",
+                    "sanpham_ten": "Cồn 901 độ",
+                    "sanpham_hoatchat": " cồn sát khuẩn 90",
+                    "sanpham_nongdohamluong": "90mg",
+                    "sanpham_donvitinh": "lít",
+                    "sanpham_hangsanxuat": "Công Ty 2",
+                    "sanpham_solo": "123456a",
+                    "sanpham_hansudung": "2023-12-23 10:23:30",
+
+                    "chitietxuat_soluong": 5,
+                    "chitietxuat_dongia": 7000,
+                    "chitiet_thanhtien": 0,
+                    "ghichu": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieuxuatkho_17": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "so": "XHT0000000001/202308",
+        "tieude": "PHIẾU XUẤT KHO",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "sochungtu": " ",
+        "noinhan": "VŨ THỊ LÊ QUYÊN",
+        "lydo_xuat": "Phát thuốc cho bệnh nhân",
+        "kho_xuat": "Kho lẻ Ngoại trú",
+        "loai_sanpham": "",
+        "tongsotien": 0,
+        "tongsotien_bangchu": "một triệu năm trăm hai mươi mốt ngàn đồng",
+        "kyten_nguoigiao": "",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+
+        "chitiet": [
+          {
+            "stt": 1,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 70 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 70",
+            "sanpham_nongdohamluong": "70mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 12",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 4,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieunhapkho_18": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "so": "XHT0000000001/202308",
+        "nhaptai": "kho chẵn VTYT - Hoá chất",
+        "tieude": "PHIẾU XUẤT KHO",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "sochungtu": "568",
+        "nhacungcap": "CÔNG TY TNHH THẾT BỊ Y TẾ THANH PHƯỚC",
+        "lydo_nhap": "nhập hoá chất",
+
+        "cong": 0,
+        "tongsotien_bangchu": "Hai mươi sáu triệu bảy trăm chín mươi bốn ngàn không trăm chín mươi bốn phẩy một đồng",
+        "kyten_nguoigiao": "",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+
+        "chitiet": [
+          {
+            "stt": 1,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 70 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 70",
+            "sanpham_nongdohamluong": "70mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 12",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 4,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          }
+        ]
+      }
+    }
+  ],
+  "bm_phieunhapkho_nguonbenngoai_19": [
+    {
+      "id": 1,
+
+      "data": {
+        "donvi_cha_ten": "SỞ Y TẾ BẠC LIÊU 1233",
+        "donvi_ten": "BỆNH VIỆN LAO VÀ BỆNH PHỔI BẠC LIÊU",
+        "so": "XHT0000000001/202308",
+        "nhaptai": "kho lẻ Nội trú",
+        "tieude": "PHIẾU XUẤT KHO",
+        "ngay_lap": "2023-7-4 10:27:30",
+        "sochungtu": "568",
+        "nhacungcap": "CÔNG TY TNHH THẾT BỊ Y TẾ THANH PHƯỚC",
+        "lydo_nhap": "nhập hoá chất",
+
+        "cong": 0,
+        "tongsotien_bangchu": "Hai mươi sáu triệu bảy trăm chín mươi bốn ngàn không trăm chín mươi bốn phẩy một đồng",
+        "kyten_nguoigiao": "",
+        "kyten_noiky": "Bạc Liêu",
+        "kyten_ngayky": "2023-8-7 10:23:50",
+        "kyten_nguoinhan": " ",
+        "kyten_truongkhoaduoc_vtyt": " ",
+        "thongtin_in_ngaygio": "2023-08-07 10:30:37",
+        "thongtin_in_nguoi": "System",
+
+        "chitiet": [
+          {
+            "stt": 1,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 70 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 70",
+            "sanpham_nongdohamluong": "70mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 12",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 2,
+            "chitietxuat_dongia": 750000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          },
+          {
+            "stt": 4,
+            "sanpham_ma": "21TPT1CON01",
+            "sanpham_ten": "Cồn 901 độ",
+            "sanpham_hoatchat": " cồn sát khuẩn 90",
+            "sanpham_nongdohamluong": "90mg",
+            "sanpham_donvitinh": "lít",
+            "sanpham_hangsanxuat": "Công Ty 2",
+            "sanpham_solo": "123456a",
+            "sanpham_hansudung": "2023-12-23 10:23:30",
+
+            "chitietxuat_soluong": 5,
+            "chitietxuat_dongia": 7000,
+            "chitiet_thanhtien": 0,
+            "ghichu": ""
+          }
+        ]
+      }
+    }
+  ]
+}
