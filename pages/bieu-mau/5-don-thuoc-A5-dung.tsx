@@ -57,168 +57,165 @@ export default function Home() {
   return (
     <div className=" paper A5 ">
       <section className="sheet  padding-5mm">
-       
-          <table className="report-container" >
-            <tbody className="report-container">
-              <tr>
-                <td>
-                  <table className=" table w-100 font-size-12 ">
-                    <tbody>
-                      <tr>
-                        <td className=" w-65 font-size-13">
-                          {data?.data?.donvi_cha_ten}
-                        </td>
-                        <td className="  text-center">
-                          Mã BN:{data?.data?.benhnhan_ma}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className=" font-bold">{data?.data?.donvi_ten}</td>
-                      </tr>
-                      <tr>
-                        <td className="">
-                          Điện thoại: {data?.data?.donvi_dienthoai}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table className="w-100  ">
-                    <tbody>
-                      <tr>
-                        <td className=" text-center font-bold  font-size-14">
-                          {data?.data?.tieude}{" "}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table className=" table w-100  font-size-12 ">
-                    <tbody>
-                      <tr>
-                        <td className="w-20">Họ tên BN:</td>
-                        <td className="font-bold w-40 font-size-13">
-                          {" "}
-                          {data?.data?.benhnhan_hoten}{" "}
-                        </td>
-                        <td className="">
-                          Tuổi:{data?.data?.benhnhan_ngaysinh}
-                        </td>
-                        <td className="">
-                          Giới tính: {data?.data?.benhnhan_gioitinh}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className="text-middle">Số thẻ BHYT:</td>
-                        <td className="text-middle " colSpan={3}>
-                          <table className="  w-60">
-                            <tbody>
-                              <tr>
-                                <td className="w-auto text-middle font-bold ">
-                                  {" "}
-                                  {str1}-{str2}-{str3}-{str4}-{str5}-{str6}-
-                                  {data?.data?.giayto_noidangky}{" "}
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Địa Chỉ:</td>
-                        <td colSpan={3}>{data?.data?.benhnhan_diachi}</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Khoa:</td>
-                        <td colSpan={3}>{data?.data?.khoa}</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>Chuẩn đoán:</td>
-                        <td colSpan={3}>
-                          {" "}
-                          <span>
-                            {data?.data?.chuandoan} {data?.data?.mabenh}
-                          </span>{" "}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table className=" w-100  ">
-                    <tbody>
-                      <tr>
-                        <td className="font-bold text-center font-size-15">
-                          {data?.data?.chidinh_tieude}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <table className=" table w-100 font-size-12 ">
-                    <tbody>
-                      {data?.data?.chidinh?.map((thuoc, index) => (
-                        <React.Fragment key={index}>
-                          <tr>
-                            <td className="font-bold  text-center w-5">
-                              {thuoc.thuoc_stt}
-                            </td>
-                            <td className="w-70">
-                              {" "}
-                              {thuoc.thuoc_ten} {thuoc.thuoc_hoatchat}{" "}
-                              {thuoc.thuoc_nongdohamluong}
-                            </td>
+        <table className="report-container">
+          <tbody className="report-container">
+            <tr>
+              <td>
+                <table className=" table w-100 font-size-12 ">
+                  <tbody>
+                    <tr>
+                      <td className=" w-65 font-size-13">
+                        {data?.data?.donvi_cha_ten}
+                      </td>
+                      <td className="  text-center">
+                        Mã BN:{data?.data?.benhnhan_ma}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className=" font-bold">{data?.data?.donvi_ten}</td>
+                    </tr>
+                    <tr>
+                      <td className="">
+                        Điện thoại: {data?.data?.donvi_dienthoai}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table className="w-100  ">
+                  <tbody>
+                    <tr>
+                      <td className=" text-center font-bold  font-size-14">
+                        {data?.data?.tieude}{" "}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table className=" table w-100  font-size-12 ">
+                  <tbody>
+                    <tr>
+                      <td className="w-20">Họ tên BN:</td>
+                      <td className="font-bold w-40 font-size-13">
+                        {" "}
+                        {data?.data?.benhnhan_hoten}{" "}
+                      </td>
+                      <td className="">Tuổi:{data?.data?.benhnhan_ngaysinh}</td>
+                      <td className="">
+                        Giới tính: {data?.data?.benhnhan_gioitinh}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="text-middle">Số thẻ BHYT:</td>
+                      <td className="text-middle " colSpan={3}>
+                        <table className="  w-60">
+                          <tbody>
+                            <tr>
+                              <td className="w-auto text-middle font-bold ">
+                                {" "}
+                                {str1}-{str2}-{str3}-{str4}-{str5}-{str6}-
+                                {data?.data?.giayto_noidangky}{" "}
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Địa Chỉ:</td>
+                      <td colSpan={3}>{data?.data?.benhnhan_diachi}</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Khoa:</td>
+                      <td colSpan={3}>{data?.data?.khoa}</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Chuẩn đoán:</td>
+                      <td colSpan={3}>
+                        {" "}
+                        <span>
+                          {data?.data?.chuandoan} {data?.data?.mabenh}
+                        </span>{" "}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table className=" w-100  ">
+                  <tbody>
+                    <tr>
+                      <td className="font-bold text-center font-size-15">
+                        {data?.data?.chidinh_tieude}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table className=" table w-100 font-size-12 ">
+                  <tbody>
+                    {data?.data?.chidinh?.map((thuoc, index) => (
+                      <React.Fragment key={index}>
+                        <tr>
+                          <td className="font-bold  text-center w-5">
+                            {thuoc.thuoc_stt}
+                          </td>
+                          <td className="w-70">
+                            {" "}
+                            {thuoc.thuoc_ten} {thuoc.thuoc_hoatchat}{" "}
+                            {thuoc.thuoc_nongdohamluong}
+                          </td>
 
-                            <td className="font-bold text-center">
-                              {thuoc.thuoc_soluong}
-                            </td>
-                            <td className="text-center">Viên</td>
-                          </tr>
-                          <tr>
-                            <td></td>
-                            <td className=" font-italic " colSpan={3}>
-                              {thuoc.thuoc_cachdung}
-                            </td>
-                          </tr>
-                        </React.Fragment>
-                      ))}
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-              </tr>
-            </tbody>
-            <tfoot className="report-footer">
-              <tr>
-                <td className="  ">Tái khám xin mang theo đơn này</td>
-              </tr>
-              <tr>
-                <td className=" bt-1">
-                  Ngày giờ in: {data?.data?.thongtin_in_ngaygio}
-                </td>
-              </tr>
-            </tfoot>
-          </table>
+                          <td className="font-bold text-center">
+                            {thuoc.thuoc_soluong}
+                          </td>
+                          <td className="text-center">Viên</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td className=" font-italic " colSpan={3}>
+                            {thuoc.thuoc_cachdung}
+                          </td>
+                        </tr>
+                      </React.Fragment>
+                    ))}
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot className="report-footer">
+            <tr>
+              <td className="  ">Tái khám xin mang theo đơn này</td>
+            </tr>
+            <tr>
+              <td className=" bt-1">
+                Ngày giờ in: {data?.data?.thongtin_in_ngaygio}
+              </td>
+            </tr>
+          </tfoot>
+        </table>
 
-          {/* <table className="table  w-100 text-center clear font-size-12 ">
+        {/* <table className="table  w-100 text-center clear font-size-12 ">
             <tbody>
               <tr>
                 <td className="w-50"></td>
@@ -270,8 +267,6 @@ export default function Home() {
               </tr>
             </tbody>
           </table> */}
-        
-      
       </section>
       {/* <div>
           <table className=" font-size-10 w-100 footer1 font-italic  ">

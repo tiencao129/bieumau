@@ -14,10 +14,10 @@
     padding: 0;
     box-sizing: border-box;
    }
-    *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    /* *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
       all: unset;
       display: revert;
-    }
+    } */
   
     /* Preferred box-sizing value */
     *,
@@ -1165,7 +1165,7 @@
       text-align: left;
     }
   
-    .text-center {
+    .centertext- {
       text-align: center;
     }
   
@@ -1240,6 +1240,12 @@
   
     /** Fix for Chrome issue #273306 **/
     @media print {
+      
+      @pape{
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+
+      
       .paper.A3.landscape {
         width: 420mm;
         background-color: #fff;
@@ -1292,14 +1298,14 @@
         display: block !important;
       }
   
-      .paper-hide-when-print {
+       .paper-hide-when-print {
         display: none !important;
       }
   
       .no-print,
       .no-print * {
         display: none !important;
-      }
+      } 
   
       h2 {
         page-break-before: always;
@@ -1316,9 +1322,9 @@
         page-break-inside: avoid;
       }
   
-      .page-break-inside-avoid {
+      /* .page-break-inside-avoid {
         page-break-inside: avoid;
-      }
+      } */
   
       /* tbody {
          page-break-inside: avoid;
@@ -1339,7 +1345,23 @@
   
       tfoot.report-footer {
         display: table-footer-group;
+        
       }
+      tbody.report-body{
+        
+        
+      }
+      table:first-child{
+        margin: 0;
+      }
+      .space
+        {height: 2em;}
+        .footer {
+          position: fixed;
+          bottom: 0;
+        
+        }
+
     } 
   
     .notificationInput {
@@ -1361,7 +1383,7 @@
         padding-left: 2%; /* Dịch chuyển văn bản sang phải 10px */
       }
       .bg-light{
-        background-color: #c0c0c0;
+        background-color: #b7b7b7;
       }
       .text-decoration-underline{
         text-decoration: underline ;
@@ -1374,11 +1396,16 @@
       .pb-50px{
         padding-bottom: 50px; 
       }
-      .p-3px{
-        padding: 3px;
+      .p-3{
+        padding: 3;
+        
       }
-      .p-5px{
-        padding: 5px;
+      
+      .p-5{
+        padding: 5;
+      }
+      .p-10{
+        padding: 10;
       }
       .pl-20px{
         padding-left:  20px;
@@ -1420,9 +1447,23 @@
         margin: 10 10 10 10;
       }
 
-    
+      .pr-1{
+        padding-right:1px ;
+      }
+      .pr-5{
+        padding-right:5 ;
+      }
+      .pr-10{
+        padding-right:10 ;
+      }
       .pr-20{
         padding-right:20% ;
+      }
+      .pl-1{
+        padding-left:1px ;
+      }
+      .pl-5{
+        padding-left:5 ;
       }
       .mt-5px{
         margin-top: 5px;
@@ -1440,7 +1481,19 @@
         .w-150px{
           width: 150px;
         }
-        
+        .pt-3{
+          padding-top: 3;
+         
+
+        }
+         .pt-5{
+          padding-top: 5;
+         
+
+        }
+        .pt-10{
+          padding-top: 10;
+        }
       .pt-20{
         padding-top: 20px;
       }
@@ -1496,10 +1549,12 @@
       .h-330px{
         height: 330px;
       }
-      .footer{
-        
-        height: 60px;
-        
+      .space
+      {height: 2em;}
+      .footer {
+        position: fixed;
+        bottom: 0;
+      
       }
       
       .footer span{
@@ -1567,6 +1622,9 @@
     .clear{
       clear:both;
     } 
+    .pre-container {
+      white-space: pre-wrap; /* Cho phép xuống hàng tự động */
+    }
 
 /* div{page-break-inside: avoid;
   page-break-after: avoid;
@@ -1580,11 +1638,12 @@
   
 }
    */
-   .print-container {
+   /* .print-container {
     page-break-after: always;
-  }
-  
+  } */
+/*   
   section {
     page-break-after: avoid; 
-  }
+  } */
+
 

@@ -1,6 +1,7 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
 import React from "react";
+import { Previewer } from 'pagedjs';
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 

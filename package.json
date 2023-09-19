@@ -45,6 +45,7 @@
     "eslint-config-next": "13.4.2",
     "lodash": "^4.17.21",
     "next": "^13.4.12",
+    "pagedjs": "^0.4.3",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-bootstrap": "^2.8.0",

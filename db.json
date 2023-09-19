@@ -414,77 +414,6 @@
             "congty_tencongty": "21TPT1CON01",
             "congty_sotien": 120000,
             "ghichu": ""
-          },          {
-            "stt": 1,
-            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 2,
-            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 3,
-            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 5,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 6,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 7,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 8,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 8,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 8,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 8,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 8,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
-          },
-          {
-            "stt": 8,
-            "congty_tencongty": "21TPT1CON01",
-            "congty_sotien": 120000,
-            "ghichu": ""
           },
           {
             "stt": 1,
@@ -557,7 +486,80 @@
             "congty_tencongty": "21TPT1CON01",
             "congty_sotien": 120000,
             "ghichu": ""
-          },          {
+          },
+          {
+            "stt": 1,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 2,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 3,
+            "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên Công Ty trach nhiệm hưu hạn 1 thành viên",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 5,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 6,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 7,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
+            "stt": 8,
+            "congty_tencongty": "21TPT1CON01",
+            "congty_sotien": 120000,
+            "ghichu": ""
+          },
+          {
             "stt": 1,
             "congty_tencongty": "Công Ty trach nhiệm hưu hạn 1 thành viên",
             "congty_sotien": 120000,
@@ -701,8 +703,6 @@
             "congty_sotien": 120000,
             "ghichu": ""
           }
-
-        
         ]
       }
     }
@@ -1924,6 +1924,349 @@
             "chitietxuat_dongia": 7000,
             "chitiet_thanhtien": 0,
             "ghichu": ""
+          }
+        ]
+      }
+    }
+  ],
+  "bm_kehoachdicongtac": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "TRƯỜNG ĐẠI HỌC CẦN THƠ",
+        "donvi_ten": "TRUNG TÂM CÔNG NGHỆ PHẦN MỀM",
+        "quochieu": "CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+        "tieungu": "Độc lập - Tự do - Hạnh phúc",
+        "tieude": "KẾ HOẠCH ĐI CÔNG TÁC",
+        "tongchiphi": 4150000,
+        "tongchiphi_bangchu": "Bốn triệu một trăm năm mươi nghìn đồng",
+        "thongtinchung": [
+          {
+            "noidung": "Triển khai nội trú, hỗ trợ hoàn chỉnh phần mềm HIS Bệnh viện Lao Bạc Liêu đưa vào hoạt động.",
+            "noidencongtac": "Bệnh viện Lao và Bệnh phổi Bạc Liêu",
+            "diadiem": "Bệnh viện Lao và Bệnh phổi Bạc Liêu",
+            "thoigiantu": "2023-08-28",
+            "thoigianden": "2023-08-31"
+          }
+        ],
+        "thanhphanthamdu": [
+          {
+            "stt": 1,
+
+            "hoten": "Dương Nguyễn Phú Cường",
+            "donvi": "Trưởng nhóm G2B"
+          },
+          {
+            "stt": 2,
+
+            "hoten": "Lê Nguyễn Anh Khang",
+            "donvi": "BPPM"
+          },
+          {
+            "stt": 3,
+
+            "hoten": "Nguyễn Hoàng Duy",
+            "donvi": "BPPM"
+          },
+          {
+            "stt": 4,
+
+            "hoten": "Nguyễn Chiêu Anh Hiếu",
+            "donvi": "BPPM"
+          }
+        ],
+        "dutrukinhphi": [
+          {
+            "congtacchiphi": [
+              {
+                "stt": 1,
+                "canbo": "LNAKhang",
+                "ngaycongtac": "2023-08-29 10:23:45",
+                "ngayketthuccongtac": "2023-08-30 10:23:45",
+                "soluong": 2,
+                "dongia": 120000,
+                "thanhtien": 240000
+              },
+              {
+                "stt": 2,
+
+                "canbo": "NHDuy",
+                "ngaycongtac": "2023-08-30 10:23:45",
+                "ngayketthuccongtac": "2023-08-31 10:23:45",
+                "soluong": 2,
+                "dongia": 120000,
+                "thanhtien": 240000
+              },
+              {
+                "stt": 3,
+
+                "canbo": "NCAhieu",
+                "ngaycongtac": "2023-08-30 7:23:45",
+                "ngayketthuccongtac": "2023-08-30 23:23:45",
+                "soluong": 1,
+                "dongia": 120000,
+                "thanhtien": 240000
+              }
+            ],
+            "tienxang": [
+              {
+                "tienxang_canbo": "LNAKhang",
+                "tienxang_diadiemdi": "Cần Thơ",
+                "tienxang_diadiemden": "Bạc Liêu",
+                "tienxang_ngaycongtac": "2023-08-29 10:23:45",
+                "tienxang_ngayketthuccongtac": "2023-08-30 10:23:45",
+                "diengiai": [
+                  {
+                    "canbo": "LNAKhang",
+                    "tienxang_chitietdive_songay": 1,
+                    "tienxang_chitietdive_sokm": 250,
+                    "tienxang_dongia": 1500,
+                    "tienxang_thanhtien": 375000,
+
+                    "tienxang_chitietdichuyennoio_dausang": "buổi sáng 07h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_chitietdichuyennoio_cuoisang": "buổi sáng 11h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_chitietdichuyennoio_dauchieu": "buổi chieu 07h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_chitietdichuyennoio_cuoichieu": "buổi chieu 11h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_tongdichuyennoio_sokm": 40,
+                    "tienxang_tongdichuyennoio_songay": 2,
+                    "tienxang_tongdichuyennoio": 80,
+                    "tienxang_tongdichuyennoio_thanhtien": 120000,
+
+                    "tienxang_soxe": 1,
+
+                    "phongnghi_sophong": 1,
+                    "phongnghi_sodem": 1,
+                    "phongnghi_dongia": 500000
+                  }
+                ]
+              },
+              {
+                "tienxang_canbo": "LNAKhang",
+                "tienxang_diadiemdi": "Cần Thơ",
+                "tienxang_diadiemden": "Bạc Liêu",
+                "tienxang_ngaycongtac": "2023-08-29 10:23:45",
+                "tienxang_ngayketthuccongtac": "2023-08-30 10:23:45",
+                "diengiai": [
+                  {
+                    "canbo": "NHDuy",
+                    "tienxang_chitietdive_songay": 1,
+                    "tienxang_chitietdive_sokm": 250,
+                    "tienxang_dongia": 1500,
+                    "tienxang_thanhtien": 375000,
+
+                    "tienxang_chitietdichuyennoio_dausang": "buổi sáng 07h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_chitietdichuyennoio_cuoisang": "buổi sáng 11h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_chitietdichuyennoio_dauchieu": "buổi chieu 07h: từ Khách sạn đến Bệnh viện làm việc: 10Km",
+                    "tienxang_chitietdichuyennoio_cuoichieu": "",
+                    "tienxang_tongdichuyennoio_sokm": 30,
+                    "tienxang_tongdichuyennoio_songay": 2,
+                    "tienxang_tongdichuyennoio": 60,
+                    "tienxang_tongdichuyennoio_thanhtien": 90000,
+                    "tienxang_soxe": 1,
+
+                    "phongnghi_sophong": 1,
+                    "phongnghi_sodem": 0,
+                    "phongnghi_dongia": 500000
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "bm_kechungtuthanhtoan": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "TRƯỜNG ĐẠI HỌC CẦN THƠ",
+        "donvi_ten": "TRUNG TÂM CÔNG NGHỆ PHẦN MỀM",
+        "quochieu": "CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+        "tieungu": "Độc lập - Tự do - Hạnh phúc",
+        "tieude": "BẢNG KÊ CHỨNG TỪ THANH TOÁN",
+        "nguoithanhtoan": "Nguyễn Ngọc Hy",
+        "donvi": "Phần mềm",
+        "noidung_thanhtoan": "Chi phí công tác tại Bạc Liêu từ 24/07/2023 đến 28/07/2023",
+        "tongcong": 3520000,
+        "tongcong_bangchu": "Ba triệu năm trăm hai mươi nghìn đồng ",
+
+        "chitiet": [
+          {
+            "tt": 1,
+            "diengiai": "Giấy đi đường DNPCường",
+            "soluong": 1,
+            "dongia": 495000,
+            "thanhtien": 495000,
+            "ghichu": "CTP: 120.000 Xăng Cần Thơ ￩￫ Bạc Liêu :  250km/ngày x 1.500 = 375.000"
+          },
+          {
+            "tt": 2,
+            "diengiai": "Giấy đi đường NNhy",
+            "soluong": 1,
+            "dongia": 915000,
+            "thanhtien": 915000,
+            "ghichu": "CTP:360.000 Xăng Cần Thơ ￩￫ Bạc Liêu :  250km/ngày x 1.500 = 375.000 Xăng di chuyển nội ô: 03 ngày x 40km/ngày x 1.500 = 180.000 "
+          },
+          {
+            "tt": 3,
+            "diengiai": "Giấy đi đường LNAKhang ",
+            "soluong": 1,
+            "dongia": 99000,
+            "thanhtien": 990000,
+            "ghichu": "CTP:240.000 Xăng Cần Thơ ￩￫ Bạc Liêu :  02 ngày x 250km/ngày x 1.500 = 750.000"
+          },
+          {
+            "tt": 4,
+            "diengiai": "Phòng nghỉ ",
+            "soluong": 1,
+            "dongia": 1000000,
+            "thanhtien": 1000000,
+            "ghichu": "Phòng nghỉ: 01 phòng x 02 đêm x 500.000 = 1.000.000 "
+          }
+        ]
+      }
+    }
+  ],
+  "bm_giaydenghithanhtoan": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "TRƯỜNG ĐẠI HỌC CẦN THƠ",
+        "donvi_ten": "TRUNG TÂM CÔNG NGHỆ PHẦN MỀM",
+        "tieude": "GIẤY ĐỀ NGHỊ THANH TOÁN",
+        "kinhgui": "Ban Giám Đốc Trung tâm Công nghệ phần mềm Đại học Cần Thơ",
+        "hoten": "Nguyễn Ngọc Hy",
+        "bophan": "Bộ phận Phần mềm – Nhóm G2B",
+        "mscb": "009989",
+        "noidung_thanhtoan": "Chi phí công tác tại Bạc Liêu từ 24/07/2023 đến 28/07/2023",
+        "sotien": 3520000,
+        "sotien_bangchu": "Ba triệu năm trăm hai mươi nghìn đồng "
+      }
+    }
+  ],
+  "bm_giaydenghitamung": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "TRƯỜNG ĐẠI HỌC CẦN THƠ",
+        "donvi_ten": "TRUNG TÂM CÔNG NGHỆ PHẦN MỀM",
+        "tieude": "GIẤY ĐỀ NGHỊ TẠM ỨNG",
+        "ngay_denghi": "2023-08-31 10:12:12",
+        "kinhgui": "Ban Giám Đốc Trung tâm Công nghệ phần mềm Đại học Cần Thơ",
+        "hoten": "Dương Nguyễn Phú Cường",
+        "bophan": " Phần mềm ",
+        "mscb": "009989",
+        "noidung_thanhtoan": "Tạm ứng theo kế hoạch công tác tại Bệnh viện Lao và Bệnh phổi Bạc Liêu từ ngày 28/08/2023 đến 31/08/2023",
+        "sotien": 3520000,
+        "sotien_bangchu": "Ba triệu năm trăm hai mươi nghìn đồng ",
+        "thoihan_thanhtoan": "2023-08-31 10:12:12"
+      }
+    }
+  ],
+  "bm_baocaotuan": [
+    {
+      "id": 1,
+      "data": {
+        "donvi_cha_ten": "ĐƠN VỊ CUNG CẤP PHẦN MỀM ",
+        "donvi_so": "BBH",
+        "quochieu": "CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM",
+        "tieungu": "Độc lập - Tự do - Hạnh phúc",
+        "ngay": "2023-08-12 10:10:10",
+        "tieude": "BÁO CÁO TUẦN 07-11/08/2023",
+        "tieude_donvi": "Bệnh viện Lao Phổi Bạc Liêu",
+
+        "donvi": "Trung tâm Công nghệ Phần mềm ",
+        "diadiem": "phonglaptrinh",
+        "thoigiantu": "2023-08-07 10:21:30",
+        "thoigianden": "2023-08-11 10:21:30",
+        "kyten_nguoibaocao":"Dương Nguyễn Phú Cường",
+        "caccongviecthuchien": [
+          {
+            "ten_khoa":"KHOA DƯỢC", 
+            "chitiet": [
+              {
+                "tt":1,
+                "congviec":" Phần mềm đã gửi biên bản xác nhận Thống nhất quy trình thay đổi hạn sử dụng thuốc theo yêu cầu khoa Dược:- Phần mềm bổ sung công cụ cho phép cập nhật hạn sử dụng- Các báo cáo sẽ hiển thị ngày hạn sử dụng mới.- Ghi lại nhật ký trương trình khi cập nhật hạn sử dụng. ",
+                "ketluan":"Phần mềm đã phát triển tool chức năng để cập nhật hạn sử dụng.  => sau khi có xác nhận của bệnh viện sẽ cấp quyền và hướng dẫn thao tác cho các cán bộ khoa Dược thực hiện."
+              },
+              {
+                "tt":2,
+                "congviec":" Phần mềm đã gửi biên bản xác nhận Thống nhất quy trình thay đổi hạn sử dụng thuốc theo yêu cầu khoa Dược:- Phần mềm bổ sung công cụ cho phép cập nhật hạn sử dụng- Các báo cáo sẽ hiển thị ngày hạn sử dụng mới.- Ghi lại nhật ký trương trình khi cập nhật hạn sử dụng. ",
+                "ketluan":"Phần mềm đã phát triển cho phép điều Ddưỡng tại khoa có thể chủ động chọn kho để hoàn trả thuốc về. Đang trong quá trình kiểm thử chức năng. Cần Bệnh viện thống nhất là kho lẻ Nội trú có trực ngoài giờ hay không để phần mềm cấu hình các kho thuốc cho phép trả về. Dự kiến: trong tuần 28-31/08/2023 sẽ cập nhật phần mềm và hướng dẫn sử dụng chức năng (khi BV đã thống nhất các kho cho phép hoàn trả)."
+              }
+            ]
+          },
+          {
+            "ten_khoa":"KHOA KHÁM", 
+            "chitiet": [
+              {
+                "tt":1,
+                "congviec":" Phần mềm đã gửi biên bản xác nhận Thống nhất quy trình thay đổi hạn sử dụng thuốc theo yêu cầu khoa Dược:- Phần mềm bổ sung công cụ cho phép cập nhật hạn sử dụng- Các báo cáo sẽ hiển thị ngày hạn sử dụng mới.- Ghi lại nhật ký trương trình khi cập nhật hạn sử dụng. ",
+                "ketluan":"Phần mềm đã phát triển tool chức năng để cập nhật hạn sử dụng.  => sau khi có xác nhận của bệnh viện sẽ cấp quyền và hướng dẫn thao tác cho các cán bộ khoa Dược thực hiện."
+              },
+              {
+                "tt":2,
+                "congviec":" Phần mềm đã gửi biên bản xác nhận Thống nhất quy trình thay đổi hạn sử dụng thuốc theo yêu cầu khoa Dược:- Phần mềm bổ sung công cụ cho phép cập nhật hạn sử dụng- Các báo cáo sẽ hiển thị ngày hạn sử dụng mới.- Ghi lại nhật ký trương trình khi cập nhật hạn sử dụng. ",
+                "ketluan":"Phần mềm đã phát triển "
+              }
+            ]
+          },
+          {
+            "ten_khoa":"KHOA CHUẨN ĐOÁN CHỈNH HÌNH", 
+            "chitiet": [
+              {
+                "tt":1,
+                "congviec":" Phần mềm đã gửi biên bản xác nhận Thống nhất quy trình thay đổi hạn sử dụng thuốc theo yêu cầu khoa Dược:- Phần mềm bổ sung công cụ cho phép cập nhật hạn sử dụng- Các báo cáo sẽ hiển thị ngày hạn sử dụng mới.- Ghi lại nhật ký trương trình khi cập nhật hạn sử dụng. ",
+                "ketluan":"Phần mềm đã phát triển tool chức năng để cập nhật hạn sử dụng.  => sau khi có xác nhận của bệnh viện sẽ cấp quyền và hướng dẫn thao tác cho các cán bộ khoa Dược thực hiện."
+              },
+              {
+                "tt":2,
+                "congviec":" Phần mềm đã gửi biên bản xác nhận Thống nhất quy trình thay đổi hạn sử dụng thuốc theo yêu cầu khoa Dược:- Phần mềm bổ sung công cụ cho phép cập nhật hạn sử dụng- Các báo cáo sẽ hiển thị ngày hạn sử dụng mới.- Ghi lại nhật ký trương trình khi cập nhật hạn sử dụng. ",
+                "ketluan":"Phần mềm đã phát triển "
+              }
+            ]
+          }
+        ],
+        "phuluc1": [
+          {
+            "tenphuluc": "biểu mẫu in Sự thay đổi Cơ số tủ trực",
+            "donvi_cha_ten": "Bệnh viện Lao và bệnh Phổi Bạc Liêu",
+            "donvi_ten": "Khoa Dược - VTYT",
+            "tieude": "CƠ SỐ TỦ TRỰC",
+            "tieude_khoa": "Tủ trực Dược khoa Lao",
+            "tungay": "2023-08-01 00:00:00",
+            "denngay": "2023-08-01 23:59:59",
+            "danhsachcacsanphamthaydoi": [
+              {
+                "stt": 1,
+
+                "sanpham_ten": "Cồn 70 độ",
+                "sanpham_hoatchat": " cồn sát khuẩn 70",
+                "sanpham_nongdohamluong": "70mg",
+                "sanpham_donvitinh": "lít",
+                "sanpham_cosocu": "10",
+                "sanpham_cosomoi": "0",
+
+                "sanpham_ngaycapnhat": "2023-12-23 10:23:30",
+
+                "lydo": "Lý do cập nhật cơ số"
+              },
+              {
+                "stt": 2,
+
+                "sanpham_ten": "Cồn 90 độ",
+                "sanpham_hoatchat": " cồn sát khuẩn 90",
+                "sanpham_nongdohamluong": "90mg",
+                "sanpham_donvitinh": "lít",
+                "sanpham_cosocu": "10",
+                "sanpham_cosomoi": "20",
+
+                "sanpham_ngaycapnhat": "2023-12-23 10:23:30",
+
+                "lydo": "Lý do cập nhật cơ số"
+              }
+            ]
           }
         ]
       }
